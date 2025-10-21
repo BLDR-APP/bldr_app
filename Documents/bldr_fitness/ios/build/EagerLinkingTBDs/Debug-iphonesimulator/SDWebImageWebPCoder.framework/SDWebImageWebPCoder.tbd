@@ -1,0 +1,67 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_SDImageCoderEncodeWebPSnsStrength",
+            "_SDWebImageWebPCoderVersionString",
+            "_SDImageCoderEncodeWebPAutofilter",
+            "_SDImageCoderEncodeWebPAlphaCompression",
+            "_SDImageCoderEncodeWebPAlphaFiltering",
+            "_SDImageCoderEncodeWebPPartitions",
+            "_SDImageCoderEncodeWebPPreprocessing",
+            "_SDImageCoderEncodeWebPFilterType",
+            "_SDImageCoderEncodeWebPSegments",
+            "_SDImageCoderEncodeWebPTargetPSNR",
+            "_SDImageCoderEncodeWebPFilterStrength",
+            "_SDImageCoderEncodeWebPAlphaQuality",
+            "_SDImageCoderEncodeWebPMethod",
+            "_SDImageCoderEncodeWebPShowCompressed",
+            "_SDImageCoderEncodeWebPLowMemory",
+            "_SDImageCoderEncodeWebPLossless",
+            "_SDImageCoderEncodeWebPPass",
+            "_SDImageCoderEncodeWebPThreadLevel",
+            "_SDWebImageWebPCoderVersionNumber",
+            "_SDImageCoderEncodeWebPFilterSharpness",
+            "_SDImageCoderEncodeWebPPartitionLimit",
+            "_SDImageCoderEncodeWebPUseSharpYuv"
+          ],
+          "objc_class": [
+            "SDWebPCoderFrame",
+            "PodsDummy_SDWebImageWebPCoder",
+            "SDImageWebPCoder"
+          ]
+        },
+        "text": {
+          "global": [
+            "_ConvertCSPMode"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/SDWebImageWebPCoder.framework/SDWebImageWebPCoder"
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "9",
+        "target": "x86_64-ios-simulator"
+      },
+      {
+        "min_deployment": "14",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

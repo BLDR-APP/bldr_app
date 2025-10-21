@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException-master.dia",
+    "emit-module-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException-master-emit-module.dia",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException-master.swiftdeps"
+  },
+  "/Users/SideHustle/Documents/bldr_fitness/ios/Pods/CwlCatchException/Sources/CwlCatchException/CwlCatchException.swift" : {
+    "const-values" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException.swiftconstvalues",
+    "dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException.d",
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException.o",
+    "llvm-bc" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException.bc",
+    "object" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException.o",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException.swiftdeps",
+    "swiftmodule" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/Objects-normal/arm64/CwlCatchException~partial.swiftmodule"
+  }
+}

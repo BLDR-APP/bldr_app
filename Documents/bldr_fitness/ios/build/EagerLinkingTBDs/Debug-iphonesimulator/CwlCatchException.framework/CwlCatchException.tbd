@@ -1,0 +1,78 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$s17CwlCatchException0C5ErrorVMn",
+            "_$s17CwlCatchException0C5ErrorVN",
+            "_CwlCatchExceptionVersionNumber",
+            "_$s17CwlCatchException0C5ErrorVyACSo11NSExceptionCcfC",
+            "_$s17CwlCatchException0C5ErrorV13errorUserInfoSDySSypGvpMV",
+            "_$s17CwlCatchException0C5ErrorV13errorUserInfoSDySSypGvg",
+            "_$s17CwlCatchException0C5ErrorV6domainSSvpfi",
+            "_$s17CwlCatchException0C5ErrorVs0D0AAMc",
+            "_$s17CwlCatchException0C5ErrorV6domainSSvg",
+            "_$s17CwlCatchException0C5ErrorV9exceptionSo11NSExceptionCvpMV",
+            "_CwlCatchExceptionVersionString",
+            "_$s17CwlCatchException0C5ErrorV10Foundation13CustomNSErrorAAMc",
+            "_$s17CwlCatchException0C5ErrorV9exceptionSo11NSExceptionCvg",
+            "_$s17CwlCatchException0C5ErrorVMa",
+            "_$s17CwlCatchException05catchC7AsError2inxxyKXE_tKlF",
+            "_$s17CwlCatchException0C5ErrorV6domainSSvpMV",
+            "_$sSo11NSExceptionC17CwlCatchExceptionE05catchD02inABXDSgyyXE_tFZ"
+          ],
+          "objc_class": [
+            "PodsDummy_CwlCatchException"
+          ]
+        }
+      },
+      {
+        "data": {
+          "global": [
+            "_Swift50Overrides",
+            "_Swift51Overrides"
+          ]
+        },
+        "targets": [
+          "x86_64-ios-simulator"
+        ],
+        "text": {
+          "global": [
+            "__ZN5swift34swift50override_conformsToProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEPFPKNS_18TargetWitnessTableIS1_EES4_S8_E",
+            "__Z34_swiftoverride_class_getSuperclassPKN5swift14TargetMetadataINS_9InProcessEEE",
+            "__ZN5swift39swift51override_conformsToSwiftProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEN7__swift9__runtime4llvm9StringRefEPFPKNS_35TargetProtocolConformanceDescriptorIS1_EES4_S8_SC_E"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/CwlCatchException.framework/CwlCatchException"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "12",
+        "target": "x86_64-ios-simulator"
+      },
+      {
+        "min_deployment": "14",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

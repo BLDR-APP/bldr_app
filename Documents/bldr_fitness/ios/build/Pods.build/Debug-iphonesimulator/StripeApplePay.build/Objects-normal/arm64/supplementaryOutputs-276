@@ -1,0 +1,36 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/ApplePayContext/STPAPIClient+ApplePay.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/SetupIntent+API.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/Models/ShippingDetails.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.d"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/Models/SetupIntentParams.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.swiftdeps"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.swiftconstvalues"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/Analytics/STPAnalyticsClient+Payments.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.o"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/Analytics/STPAnalyticsClient+PaymentsAPI.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.dia"

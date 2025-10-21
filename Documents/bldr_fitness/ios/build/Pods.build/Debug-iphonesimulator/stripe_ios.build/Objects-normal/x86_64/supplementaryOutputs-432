@@ -1,0 +1,42 @@
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/StripePlugin+PayPlugin.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin+PayPlugin.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin+PayPlugin.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin+PayPlugin.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin+PayPlugin.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin+PayPlugin.d"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/StripeContainerView.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeContainerView.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeContainerView.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeContainerView.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeContainerView.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeContainerView.swiftconstvalues"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/StripeSdk+CustomerSheet.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+CustomerSheet.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+CustomerSheet.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+CustomerSheet.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+CustomerSheet.dia"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+CustomerSheet.swiftdeps"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/StripeSdk.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk.swiftdeps"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/StripePlugin.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripePlugin.dia"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/StripeSdk+PaymentSheet.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+PaymentSheet.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+PaymentSheet.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+PaymentSheet.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+PaymentSheet.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/StripeSdk+PaymentSheet.swiftconstvalues"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/UIColorExtension.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/UIColorExtension.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/UIColorExtension.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/UIColorExtension.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/UIColorExtension.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/UIColorExtension.o"

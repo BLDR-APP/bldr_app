@@ -1,0 +1,68 @@
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/Analytic.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/AnalyticLoggableError.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/AnalyticLoggableErrorV2.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/AnalyticsClientV2.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/AnalyticsHelper.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/Async.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/BundleLocatorProtocol.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/Decimal+StripeCore.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/Dictionary+Stripe.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/Models/EmptyResponse.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/Enums+CustomStringConvertible.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/FileDownloader.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Connections\ Bindings/FinancialConnectionsEvent.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Connections\ Bindings/FinancialConnectionsLinkedBank.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Connections\ Bindings/FinancialConnectionsSDKInterface.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Connections\ Bindings/FinancialConnectionsSDKResult.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Telemetry/FraudDetectionData.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/InstallMethod.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Connections\ Bindings/InstantDebitsLinkedBank.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/Locale+StripeCore.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/NetworkDetector.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/NSArray+Stripe.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/NSBundle+Stripe_AppName.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/NSCharacterSet+StripeCore.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/NSError+Stripe.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/NSError+StripeCore.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/NSMutableURLRequest+Stripe.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/NSURLComponents+Stripe.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/PaymentsSDKVariant.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/PluginDetector.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/ServerErrorMapper.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/STPAnalyticEvent.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/STPAnalyticsClient.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Analytics/STPAnalyticsClient+Error.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/STPAPIClient.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/STPAPIClient+FileUpload.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/STPAppInfo.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/STPAssert.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/STPDeviceUtils.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/STPDispatchFunctions.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/STPError.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Localization/STPLocalizationUtils.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Localization/STPLocalizedString.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/STPMultipartFormDataEncoder.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/STPMultipartFormDataPart.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/STPNumericStringValidator.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Telemetry/STPTelemetryClient.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/STPURLCallbackHandler.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Localization/String+Localized.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/String+StripeCore.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/StripeAPI.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/StripeAPIConfiguration.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/StripeAPIConfiguration+Version.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Coder/StripeCodable.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/StripeCoreBundleLocator.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/StripeError.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/Models/StripeFile.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Coder/StripeJSONDecoder.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Coder/StripeJSONEncoder.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Coder/StripeJSONShared.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API\ Bindings/StripeServiceError.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/UI/UIActivityIndicatorView+Stripe.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/UI/UIFont+Stripe.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/UIImage+StripeCore.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Coder/UnknownFields.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/URLEncoder.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/URLSession+Retry.swift
+/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Telemetry/UserDefaults+PaymentsCore.swift

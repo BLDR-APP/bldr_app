@@ -1,0 +1,36 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/SetupIntent+API.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntent+API.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntent+API.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntent+API.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntent+API.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntent+API.swiftconstvalues"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/Analytics/STPAnalyticsClient+Payments.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+Payments.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+Payments.swiftdeps"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+Payments.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+Payments.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+Payments.dia"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/Analytics/STPAnalyticsClient+PaymentsAPI.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+PaymentsAPI.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+PaymentsAPI.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+PaymentsAPI.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+PaymentsAPI.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAnalyticsClient+PaymentsAPI.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/Models/SetupIntentParams.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntentParams.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntentParams.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntentParams.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntentParams.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/SetupIntentParams.dia"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/ApplePayContext/STPAPIClient+ApplePay.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAPIClient+ApplePay.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAPIClient+ApplePay.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAPIClient+ApplePay.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAPIClient+ApplePay.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/STPAPIClient+ApplePay.o"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/Models/ShippingDetails.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/ShippingDetails.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/ShippingDetails.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/ShippingDetails.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/ShippingDetails.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeApplePay.build/Objects-normal/x86_64/ShippingDetails.dia"

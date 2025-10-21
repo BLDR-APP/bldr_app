@@ -1,0 +1,48 @@
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/CardFieldView.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldView.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldView.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldView.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldView.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldView.swiftconstvalues"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/CustomerSheet/CustomerSheetUtils.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CustomerSheetUtils.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CustomerSheetUtils.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CustomerSheetUtils.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CustomerSheetUtils.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CustomerSheetUtils.swiftconstvalues"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/CardFormFactory.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormFactory.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormFactory.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormFactory.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormFactory.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormFactory.d"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/Errors.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Errors.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Errors.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Errors.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Errors.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Errors.o"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/FinancialConnections.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/FinancialConnections.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/FinancialConnections.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/FinancialConnections.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/FinancialConnections.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/FinancialConnections.d"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/CardFieldFactory.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldFactory.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldFactory.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldFactory.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldFactory.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFieldFactory.dia"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/CardFormView.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormView.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormView.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormView.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormView.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/CardFormView.d"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/AuBECSDebitFormView.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormView.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormView.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormView.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormView.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormView.swiftdeps"

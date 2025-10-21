@@ -1,0 +1,48 @@
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/ApplePayUtils.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayUtils.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayUtils.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayUtils.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayUtils.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayUtils.swiftconstvalues"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/ApplePayButtonView.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayButtonView.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayButtonView.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayButtonView.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayButtonView.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayButtonView.dia"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/PushProvisioning/AddToWalletButtonView.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonView.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonView.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonView.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonView.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonView.swiftdeps"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/ApplePayViewController.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayViewController.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayViewController.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayViewController.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayViewController.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ApplePayViewController.d"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/AddressSheet/AddressSheetView.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetView.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetView.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetView.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetView.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetView.dia"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/AddressSheet/AddressSheetUtils.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetUtils.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetUtils.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetUtils.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetUtils.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddressSheetUtils.o"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/AuBECSDebitFormFactory.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormFactory.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormFactory.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormFactory.swiftdeps"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormFactory.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AuBECSDebitFormFactory.dia"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/AddToWalletButtonFactory.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonFactory.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonFactory.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonFactory.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonFactory.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/AddToWalletButtonFactory.d"

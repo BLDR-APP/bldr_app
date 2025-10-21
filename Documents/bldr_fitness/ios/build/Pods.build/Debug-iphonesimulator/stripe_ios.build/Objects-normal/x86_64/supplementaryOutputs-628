@@ -1,0 +1,42 @@
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/Mappers.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Mappers.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Mappers.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Mappers.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Mappers.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/Mappers.o"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Bridge/RCTBridge.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/RCTBridge-b95086503f7d3a2f7b2a1d2588f1f0af.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/RCTBridge-b95086503f7d3a2f7b2a1d2588f1f0af.swiftdeps"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/RCTBridge-b95086503f7d3a2f7b2a1d2588f1f0af.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/RCTBridge-b95086503f7d3a2f7b2a1d2588f1f0af.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/RCTBridge-b95086503f7d3a2f7b2a1d2588f1f0af.dia"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/PaymentMethodFactory.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentMethodFactory.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentMethodFactory.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentMethodFactory.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentMethodFactory.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentMethodFactory.d"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/PushProvisioning/PushProvisioningUtils.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PushProvisioningUtils.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PushProvisioningUtils.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PushProvisioningUtils.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PushProvisioningUtils.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PushProvisioningUtils.d"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/PaymentPassFinder.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentPassFinder.dia"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentPassFinder.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentPassFinder.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentPassFinder.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentPassFinder.swiftconstvalues"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/PaymentSheetAppearance.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentSheetAppearance.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentSheetAppearance.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentSheetAppearance.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentSheetAppearance.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/PaymentSheetAppearance.swiftconstvalues"
+"/Users/SideHustle/.pub-cache/hosted/pub.dev/stripe_ios-10.2.0/ios/Classes/Stripe Sdk/CustomerSheet/ReactNativeCustomerAdapter.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ReactNativeCustomerAdapter.dia"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ReactNativeCustomerAdapter.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ReactNativeCustomerAdapter.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ReactNativeCustomerAdapter.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/stripe_ios.build/Objects-normal/x86_64/ReactNativeCustomerAdapter.swiftconstvalues"

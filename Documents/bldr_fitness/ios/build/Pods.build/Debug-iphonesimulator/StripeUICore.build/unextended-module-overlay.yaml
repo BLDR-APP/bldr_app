@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/StripeUICore/StripeUICore.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeUICore.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/StripeUICore/StripeUICore.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "StripeUICore-Swift.h",
+      'external-contents': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeUICore.build/unextended-interface-header.h",
+    }]
+    }]
+}

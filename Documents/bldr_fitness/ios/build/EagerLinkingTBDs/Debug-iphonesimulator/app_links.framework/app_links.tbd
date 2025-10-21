@@ -1,0 +1,90 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$s9app_links8AppLinksCMm",
+            "_$s9app_links8AppLinksCfD",
+            "_$s9app_links17AppLinksIosPluginC9eventSink33_6D7DCAE91387ADD6C389D0DEEA142B04LLyypSgcSgvpfi",
+            "_$s9app_links17AppLinksIosPluginCfD",
+            "_$s9app_links8AppLinksCMn",
+            "_$s9app_links8AppLinksC6sharedAA0cD9IosPluginCvgZ",
+            "_$s9app_links17AppLinksIosPluginCMn",
+            "_$s9app_links17AppLinksIosPluginC8onListen13withArguments9eventSinkSo12FlutterErrorCSgypSg_yAJctF",
+            "_$s9app_links8AppLinksCACyc33_6D7DCAE91387ADD6C389D0DEEA142B04LlfC",
+            "_$s9app_links17AppLinksIosPluginCACycfC",
+            "_$s9app_links17AppLinksIosPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "_$s9app_links17AppLinksIosPluginC11initialLink33_6D7DCAE91387ADD6C389D0DEEA142B04LLSSSgvpfi",
+            "_$s9app_links8AppLinksC6sharedAA0cD9IosPluginCvau",
+            "_$s9app_links8AppLinksCfd",
+            "_$s9app_links17AppLinksIosPluginC11application_4open7optionsSbSo13UIApplicationC_10Foundation3URLVSDySo0J17OpenURLOptionsKeyaypGtF",
+            "_$s9app_links8AppLinksCMa",
+            "_app_linksVersionString",
+            "_$s9app_links17AppLinksIosPluginC7getLink13launchOptions10Foundation3URLVSgSDys11AnyHashableVypGSg_tF",
+            "_$s9app_links17AppLinksIosPluginC8onCancel13withArgumentsSo12FlutterErrorCSgypSg_tF",
+            "_$s9app_links17AppLinksIosPluginCMa",
+            "_$s9app_links17AppLinksIosPluginC10latestLink33_6D7DCAE91387ADD6C389D0DEEA142B04LLSSSgvpfi",
+            "_$s9app_links17AppLinksIosPluginC10handleLink3urly10Foundation3URLV_tF",
+            "_$s9app_links17AppLinksIosPluginC11application_8continue18restorationHandlerSbSo13UIApplicationC_So14NSUserActivityCySayypGctF",
+            "_$s9app_links17AppLinksIosPluginCACycfc",
+            "_$s9app_links8AppLinksC6sharedAA0cD9IosPluginCvpZ",
+            "_app_linksVersionNumber",
+            "_$s9app_links17AppLinksIosPluginC15initialLinkSent33_6D7DCAE91387ADD6C389D0DEEA142B04LLSbvpfi",
+            "_$s9app_links8AppLinksCN",
+            "_$s9app_links17AppLinksIosPluginC8register4withySo07FlutterF9Registrar_p_tFZ",
+            "_$s9app_links17AppLinksIosPluginCN"
+          ],
+          "objc_class": [
+            "_TtC9app_links17AppLinksIosPlugin",
+            "PodsDummy_app_links"
+          ]
+        }
+      },
+      {
+        "data": {
+          "global": [
+            "_Swift51Overrides"
+          ]
+        },
+        "targets": [
+          "x86_64-ios-simulator"
+        ],
+        "text": {
+          "global": [
+            "__Z34_swiftoverride_class_getSuperclassPKN5swift14TargetMetadataINS_9InProcessEEE",
+            "__ZN5swift39swift51override_conformsToSwiftProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEN7__swift9__runtime4llvm9StringRefEPFPKNS_35TargetProtocolConformanceDescriptorIS1_EES4_S8_SC_E"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/app_links.framework/app_links"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "13",
+        "target": "x86_64-ios-simulator"
+      },
+      {
+        "min_deployment": "14",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

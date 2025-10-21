@@ -1,0 +1,30 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerControllerBaseUIDelegate.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/Resource/DKImagePickerControllerResource.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.d"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKPermissionView.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPermissionView.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPermissionView.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPermissionView.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPermissionView.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPermissionView.dia"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerController.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.d"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKPopoverViewController.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPopoverViewController.dia"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPopoverViewController.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPopoverViewController.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPopoverViewController.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/Objects-normal/arm64/DKPopoverViewController.o"

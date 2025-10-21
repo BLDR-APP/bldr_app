@@ -1,0 +1,36 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/SetupIntent+API.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntent+API.swiftconstvalues"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/Models/SetupIntentParams.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/SetupIntentParams.d"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/Analytics/STPAnalyticsClient+Payments.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+Payments.o"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/Analytics/STPAnalyticsClient+PaymentsAPI.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAnalyticsClient+PaymentsAPI.dia"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/ApplePayContext/STPAPIClient+ApplePay.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/STPAPIClient+ApplePay.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeApplePay/StripeApplePay/StripeApplePay/Source/PaymentsCore/API/Models/ShippingDetails.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.swiftdeps"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripeApplePay.build/Objects-normal/arm64/ShippingDetails.o"

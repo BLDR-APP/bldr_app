@@ -1,0 +1,42 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_share_plusVersionString",
+            "_share_plusVersionNumber"
+          ],
+          "objc_class": [
+            "SharePlusData",
+            "FPPSharePlusPlugin",
+            "PodsDummy_share_plus"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/share_plus.framework/share_plus"
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "13",
+        "target": "x86_64-ios-simulator"
+      },
+      {
+        "min_deployment": "14",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

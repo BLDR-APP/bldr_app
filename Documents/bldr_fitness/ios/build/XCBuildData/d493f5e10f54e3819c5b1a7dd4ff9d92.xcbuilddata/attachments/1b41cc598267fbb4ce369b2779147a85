@@ -1,0 +1,58 @@
+{
+  "" : {
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/mobile_scanner-master.dia",
+    "emit-module-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/mobile_scanner-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/mobile_scanner-master-emit-module.dia",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/mobile_scanner-master.swiftdeps"
+  },
+  "/Users/SideHustle/.pub-cache/hosted/pub.dev/mobile_scanner-7.1.2/darwin/mobile_scanner/Sources/mobile_scanner/DetectionSpeed.swift" : {
+    "const-values" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed.swiftconstvalues",
+    "dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed.d",
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed.o",
+    "llvm-bc" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed.bc",
+    "object" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed.o",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed.swiftdeps",
+    "swiftmodule" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DetectionSpeed~partial.swiftmodule"
+  },
+  "/Users/SideHustle/.pub-cache/hosted/pub.dev/mobile_scanner-7.1.2/darwin/mobile_scanner/Sources/mobile_scanner/DeviceOrientationStreamHandler.swift" : {
+    "const-values" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler.swiftconstvalues",
+    "dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler.d",
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler.o",
+    "llvm-bc" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler.bc",
+    "object" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler.o",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler.swiftdeps",
+    "swiftmodule" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/DeviceOrientationStreamHandler~partial.swiftmodule"
+  },
+  "/Users/SideHustle/.pub-cache/hosted/pub.dev/mobile_scanner-7.1.2/darwin/mobile_scanner/Sources/mobile_scanner/MobileScannerError.swift" : {
+    "const-values" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError.swiftconstvalues",
+    "dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError.d",
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError.o",
+    "llvm-bc" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError.bc",
+    "object" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError.o",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError.swiftdeps",
+    "swiftmodule" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerError~partial.swiftmodule"
+  },
+  "/Users/SideHustle/.pub-cache/hosted/pub.dev/mobile_scanner-7.1.2/darwin/mobile_scanner/Sources/mobile_scanner/MobileScannerErrorCodes.swift" : {
+    "const-values" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes.swiftconstvalues",
+    "dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes.d",
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes.o",
+    "llvm-bc" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes.bc",
+    "object" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes.o",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes.swiftdeps",
+    "swiftmodule" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerErrorCodes~partial.swiftmodule"
+  },
+  "/Users/SideHustle/.pub-cache/hosted/pub.dev/mobile_scanner-7.1.2/darwin/mobile_scanner/Sources/mobile_scanner/MobileScannerPlugin.swift" : {
+    "const-values" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin.swiftconstvalues",
+    "dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin.d",
+    "diagnostics" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin.o",
+    "llvm-bc" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin.bc",
+    "object" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin.o",
+    "swift-dependencies" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin.swiftdeps",
+    "swiftmodule" : "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/mobile_scanner.build/Objects-normal/x86_64/MobileScannerPlugin~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_flutter_image_compress_commonVersionString",
+            "_flutter_image_compress_commonVersionNumber",
+            "_kSYImagePropertyCIFFUniqueModelID",
+            "_kSYImagePropertyCIFFMaxAperture",
+            "_kSYImagePropertyExifAuxAutoFocusInfo",
+            "_kSYImagePropertyCIFFMinAperture",
+            "_kSYImagePropertyPictureStyle",
+            "_showLog",
+            "_kSYImagePropertyExifAuxImageStabilization"
+          ],
+          "objc_class": [
+            "SYMetadataExifAux",
+            "SYMetadataMakerMinolta",
+            "SYMetadataIPTC",
+            "SYMetadataIPTCContactInfo",
+            "CompressListHandler",
+            "SYMetadata",
+            "SYMetadataMakerPentax",
+            "SYMetadataMakerNikon",
+            "SYMetadataTIFF",
+            "SYMetadataMakerFuji",
+            "SYMetadataMakerOlympus",
+            "SYMetadataCIFF",
+            "SYMetadataDNG",
+            "SYMetadataJFIF",
+            "CompressHandler",
+            "SYMetadataExif",
+            "SYMetadataMakerCanon",
+            "SYMetadata8BIM",
+            "ImageCompressPlugin",
+            "PodsDummy_flutter_image_compress_common",
+            "SYMetadataBase",
+            "SYMetadataRaw",
+            "CompressFileHandler",
+            "SYMetadataGIF",
+            "SYMetadataGPS",
+            "SYMetadataPNG"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/flutter_image_compress_common.framework/flutter_image_compress_common"
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "13",
+        "target": "x86_64-ios-simulator"
+      },
+      {
+        "min_deployment": "14",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}
