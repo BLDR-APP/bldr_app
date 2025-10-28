@@ -8,6 +8,10 @@ import 'dart:convert';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+// --- (MODIFICAÇÃO 1 de 3) ---
+// Importa as opções geradas pelo FlutterFire
+import 'firebase_options.dart';
+
 // Certifique-se de que os caminhos de importação estão corretos para seu projeto
 import './services/supabase_service.dart';
 import './services/profile_notifier.dart';
@@ -19,12 +23,18 @@ void main() async {
   // Garante que o Flutter esteja pronto para código assíncrono antes do runApp.
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp();
-
-  final configString = await rootBundle.loadString('dart_defines.dev.json');
-  appConfig = json.decode(configString);
-
+  // --- (MODIFICAÇÃO 2 de 3) ---
+  // O bloco try AGORA envolve TODA a inicialização.
   try {
+    // Inicializa o Firebase (AGORA da forma correta)
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform, // (MODIFICAÇÃO 3 de 3)
+    );
+
+    // Carrega a configuração (AGORA dentro do try)
+    final configString = await rootBundle.loadString('dart_defines.dev.json');
+    appConfig = json.decode(configString);
+
     // 1. Inicializa o Supabase.
     await SupabaseService.initialize();
 
@@ -33,26 +43,30 @@ void main() async {
     Stripe.publishableKey = appConfig['STRIPE_PUBLISHABLE_KEY'] ?? '';
     await Stripe.instance.applySettings();
 
-  runApp(
-  ChangeNotifierProvider(
-  create: (context) => ProfileNotifier(),
-  child: const MyApp(),
-  ),
-  );
+    // Roda o app principal
+    runApp(
+      ChangeNotifierProvider(
+        create: (context) => ProfileNotifier(),
+        child: const MyApp(),
+      ),
+    );
 
   } catch (e) {
-  if (kDebugMode) {
-  print('Falha crítica na inicialização do App: $e');
-  }
-  runApp(MaterialApp(
-  home: Scaffold(
-  body: Center(
-  child: Text('Erro ao iniciar o aplicativo. Detalhes: $e'),
-  ),
-  ),
-  ));
+    if (kDebugMode) {
+      print('Falha crítica na inicialização do App: $e');
+    }
+    // Roda um app de erro se qualquer coisa acima falhar
+    runApp(MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Text('Erro ao iniciar o aplicativo. Detalhes: $e'),
+        ),
+      ),
+    ));
   }
 }
+
+// --- NENHUMA ALTERAÇÃO ABAIXO ---
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
