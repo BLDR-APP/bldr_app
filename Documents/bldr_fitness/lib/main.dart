@@ -5,6 +5,8 @@ import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 // Certifique-se de que os caminhos de importação estão corretos para seu projeto
 import './services/supabase_service.dart';
@@ -16,6 +18,8 @@ late final Map<String, dynamic> appConfig;
 void main() async {
   // Garante que o Flutter esteja pronto para código assíncrono antes do runApp.
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
 
   final configString = await rootBundle.loadString('dart_defines.dev.json');
   appConfig = json.decode(configString);
@@ -61,6 +65,21 @@ class MyApp extends StatelessWidget {
           title: 'BLDR App',
           debugShowCheckedModeBanner: false,
           theme: AppTheme.darkTheme,
+          // Define o idioma padrão do app como Português (Brasil)
+          locale: const Locale('pt', 'BR'),
+
+          // Informa ao Flutter quais são os "tradutores"
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+
+          // Lista os idiomas que seu app suporta
+          supportedLocales: const [
+            Locale('pt', 'BR'), // Português (Brasil)
+            Locale('en', 'US'), // Inglês (como reserva, caso necessário)
+          ],
           initialRoute: AppRoutes.splashScreen,
           routes: AppRoutes.routes,
         );

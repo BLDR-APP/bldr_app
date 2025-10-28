@@ -1,0 +1,24 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Telemetry/UserDefaults+PaymentsCore.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UserDefaults+PaymentsCore.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UserDefaults+PaymentsCore.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UserDefaults+PaymentsCore.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UserDefaults+PaymentsCore.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UserDefaults+PaymentsCore.dia"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Coder/UnknownFields.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UnknownFields.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UnknownFields.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UnknownFields.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UnknownFields.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UnknownFields.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/URLSession+Retry.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLSession+Retry.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLSession+Retry.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLSession+Retry.dia"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLSession+Retry.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLSession+Retry.d"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/URLEncoder.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLEncoder.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLEncoder.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLEncoder.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLEncoder.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/URLEncoder.o"

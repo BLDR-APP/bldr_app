@@ -1,0 +1,24 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API Bindings/StripeServiceError.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeServiceError.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeServiceError.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeServiceError.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeServiceError.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeServiceError.dia"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Categories/UIImage+StripeCore.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIImage+StripeCore.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIImage+StripeCore.d"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIImage+StripeCore.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIImage+StripeCore.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIImage+StripeCore.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/UI/UIActivityIndicatorView+Stripe.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIActivityIndicatorView+Stripe.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIActivityIndicatorView+Stripe.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIActivityIndicatorView+Stripe.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIActivityIndicatorView+Stripe.swiftdeps"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIActivityIndicatorView+Stripe.o"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/UI/UIFont+Stripe.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIFont+Stripe.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIFont+Stripe.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIFont+Stripe.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIFont+Stripe.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/UIFont+Stripe.swiftdeps"

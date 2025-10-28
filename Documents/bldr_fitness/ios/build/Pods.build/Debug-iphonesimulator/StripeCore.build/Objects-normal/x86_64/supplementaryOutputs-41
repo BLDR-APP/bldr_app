@@ -1,0 +1,30 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Helpers/StripeCoreBundleLocator.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCoreBundleLocator.d"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCoreBundleLocator.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCoreBundleLocator.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCoreBundleLocator.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCoreBundleLocator.dia"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API Bindings/StripeAPIConfiguration.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration.o"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration.d"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API Bindings/StripeError.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeError.dia"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeError.swiftdeps"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeError.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeError.swiftconstvalues"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeError.d"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/API Bindings/StripeAPIConfiguration+Version.swift":
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration+Version.o"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration+Version.d"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration+Version.swiftdeps"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration+Version.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeAPIConfiguration+Version.swiftconstvalues"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripeCore/StripeCore/StripeCore/Source/Coder/StripeCodable.swift":
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCodable.swiftconstvalues"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCodable.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCodable.dia"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCodable.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphonesimulator/StripeCore.build/Objects-normal/x86_64/StripeCodable.d"

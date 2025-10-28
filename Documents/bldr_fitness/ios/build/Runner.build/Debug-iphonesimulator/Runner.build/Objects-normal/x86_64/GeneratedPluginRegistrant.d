@@ -78,6 +78,10 @@ dependencies: \
   /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/flutter_image_compress_common/flutter_image_compress_common.framework/Headers/SYMetadataDNG.h \
   /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/flutter_image_compress_common/flutter_image_compress_common.framework/Headers/SYMetadataExifAux.h \
   /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/flutter_image_compress_common/flutter_image_compress_common.framework/Headers/UIImage+scale.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/flutter_localization/flutter_localization.framework/Headers/FlutterLocalizationPlugin.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/flutter_localization/flutter_localization.framework/Modules/module.modulemap \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/flutter_localization/flutter_localization.framework/Headers/flutter_localization-umbrella.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/flutter_localization/flutter_localization.framework/Headers/flutter_localization-Swift.h \
   /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/fluttertoast/fluttertoast.framework/Headers/FluttertoastPlugin.h \
   /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/fluttertoast/fluttertoast.framework/Modules/module.modulemap \
   /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/fluttertoast/fluttertoast.framework/Headers/fluttertoast-umbrella.h \

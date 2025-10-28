@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "252169390838",
+    "project_id": "bldr-app-notifications",
+    "storage_bucket": "bldr-app-notifications.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252169390838:android:7d0a99f488dde3414d7ad7",
+        "android_client_info": {
+          "package_name": "com.bldr_fitness.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANOdoVxj-07aVM95B90qKF_4CbQzXOuUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

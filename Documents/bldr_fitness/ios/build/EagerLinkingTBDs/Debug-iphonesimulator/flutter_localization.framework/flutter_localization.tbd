@@ -1,0 +1,72 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginC6handle_6resultySo0D10MethodCallC_yypSgctFTq",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginCACycfC",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginCMn",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginCMa",
+            "_flutter_localizationVersionString",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginCfD",
+            "_flutter_localizationVersionNumber",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginCACycfc",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginC6handle_6resultySo0D10MethodCallC_yypSgctF",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginC8register4withySo0dF9Registrar_p_tFZ",
+            "_$s20flutter_localization30SwiftFlutterLocalizationPluginCN"
+          ],
+          "objc_class": [
+            "PodsDummy_flutter_localization",
+            "FlutterLocalizationPlugin",
+            "_TtC20flutter_localization30SwiftFlutterLocalizationPlugin"
+          ]
+        }
+      },
+      {
+        "data": {
+          "global": [
+            "_Swift51Overrides"
+          ]
+        },
+        "targets": [
+          "x86_64-ios-simulator"
+        ],
+        "text": {
+          "global": [
+            "__Z34_swiftoverride_class_getSuperclassPKN5swift14TargetMetadataINS_9InProcessEEE",
+            "__ZN5swift39swift51override_conformsToSwiftProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEN7__swift9__runtime4llvm9StringRefEPFPKNS_35TargetProtocolConformanceDescriptorIS1_EES4_S8_SC_E"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/flutter_localization.framework/flutter_localization"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "13",
+        "target": "x86_64-ios-simulator"
+      },
+      {
+        "min_deployment": "14",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

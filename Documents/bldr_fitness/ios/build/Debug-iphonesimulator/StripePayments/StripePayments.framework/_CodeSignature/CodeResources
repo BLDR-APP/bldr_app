@@ -406,11 +406,11 @@
 		</data>
 		<key>Modules/StripePayments.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vfhQl2+g3iFY1OUXtnoYPXFhidw=
+		9V/II/maFEHBWpIZyRIA/1GXx+8=
 		</data>
 		<key>Modules/StripePayments.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		k9Yfq+5HCVgNy5HvIE0/mwcF9qE=
+		1vabLXqxvCArp0IwtENDMq4TqGM=
 		</data>
 		<key>Modules/StripePayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -1903,14 +1903,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7JTO18EVvBISzpEmbkOU5fsqUGQoZv00lTfVr07yECQ=
+			offS8SujBH8wDYkr6LZcYJxURt6Ii1tCAn8gm4++W3Y=
 			</data>
 		</dict>
 		<key>Modules/StripePayments.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lrLNJcQ4ky8GmFeGKwAxuX4rKpjlVvYwx/VGURt47u0=
+			EFxjIRoEZshW4iADeVtpBUYXC3RQz9tKhqGO9bclP78=
 			</data>
 		</dict>
 		<key>Modules/StripePayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
