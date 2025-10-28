@@ -110,9 +110,9 @@ class UserService {
         'current_weight': currentWeight,
         'completion_rate': (workoutData.count ?? 0) > 0
             ? ((completedWorkoutData.count ?? 0) /
-                    (workoutData.count ?? 0) *
-                    100)
-                .round()
+            (workoutData.count ?? 0) *
+            100)
+            .round()
             : 0,
       };
     } catch (error) {
@@ -181,13 +181,13 @@ class UserService {
       final response = await _client
           .from('user_achievements')
           .insert({
-            'user_id': userId,
-            'achievement_type': achievementType,
-            'achievement_name': achievementName,
-            'achievement_description': achievementDescription,
-            'value': value,
-            'unit': unit,
-          })
+        'user_id': userId,
+        'achievement_type': achievementType,
+        'achievement_name': achievementName,
+        'achievement_description': achievementDescription,
+        'value': value,
+        'unit': unit,
+      })
           .select()
           .single();
 
@@ -298,3 +298,4 @@ class UserService {
     }
   }
 }
+

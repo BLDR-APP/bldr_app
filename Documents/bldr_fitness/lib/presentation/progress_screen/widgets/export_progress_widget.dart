@@ -44,7 +44,7 @@ class ExportProgressWidget extends StatelessWidget {
           SizedBox(height: 3.h),
           _buildExportOption(
             'PDF Report',
-            'Complete progress report with charts and analysis',
+            'Relatório de progresso completo com gráficos e análises',
             'picture_as_pdf',
             AppTheme.errorRed,
             'PDF',
@@ -52,7 +52,7 @@ class ExportProgressWidget extends StatelessWidget {
           SizedBox(height: 2.h),
           _buildExportOption(
             'Excel',
-            'Raw data export for detailed analysis',
+            'Exportação de dados em Raw para análise detalhada',
             'table_chart',
             AppTheme.successGreen,
             'CSV',
@@ -60,7 +60,7 @@ class ExportProgressWidget extends StatelessWidget {
           SizedBox(height: 2.h),
           _buildExportOption(
             'Compartilhar sumário',
-            'Quick summary for social media or trainers',
+            'Sumário para rede social ou personal trainers',
             'share',
             AppTheme.accentGold,
             'Share',

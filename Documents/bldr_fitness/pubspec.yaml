@@ -70,6 +70,9 @@ dependencies:
 
   universal_html: ^2.2.4
   model_viewer_plus: ^1.9.3
+  muscle_selector: ^1.0.4
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,5 +1,7 @@
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/CwlCatchException.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/CwlCatchExceptionSupport.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/DKImagePickerController.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/DKPhotoGallery.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/Mantle.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/SDWebImage.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/SDWebImageWebPCoder.framework
@@ -11,8 +13,10 @@
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/StripePayments.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/StripePaymentsUI.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/StripeUICore.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/SwiftyGif.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/app_links.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/connectivity_plus.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/file_picker.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/flutter_image_compress_common.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/fluttertoast.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/Runner.app/Frameworks/image_picker_ios.framework

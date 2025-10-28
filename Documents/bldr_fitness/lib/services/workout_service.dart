@@ -418,6 +418,21 @@ class WorkoutService {
     return null;
   }
 
+  /// Checa (true/false) se existe um treino ativo não concluído.
+  Future<bool> hasActiveWorkout() async {
+    try {
+      // Reutiliza a lógica que você já tem
+      final head = await _getActiveWorkoutHead();
+
+      // Se 'head' não for nulo, significa que há um treino ativo
+      return head != null;
+    } catch (e) {
+      // Em caso de erro (ex: usuário deslogado), assume que não há treino.
+      print('Erro ao checar hasActiveWorkout: $e');
+      return false;
+    }
+  }
+
   /// Injeta `is_completed` em cada set com base em `completed_at`, caso não exista
   Map<String, dynamic>? _decorateSetsWithIsCompleted(Map<String, dynamic>? workout) {
     if (workout == null) return null;

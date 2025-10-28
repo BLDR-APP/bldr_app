@@ -128,6 +128,14 @@ class ProfileSectionWidget extends StatelessWidget {
       case 'logout':
         iconData = Icons.logout;
         break;
+      case 'delete':
+        iconData = Icons.delete;
+      case 'checklist_outlined':
+        iconData = Icons.checklist_outlined;
+      case 'arrow_upward':
+        iconData = Icons.arrow_upward;
+      case 'attach_money':
+        iconData = Icons.attach_money;
       default:
         iconData = Icons.help;
     }

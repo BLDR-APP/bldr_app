@@ -4,6 +4,11 @@ import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:sizer/sizer.dart';
 
+// ===== NOVOS IMPORTS ADICIONADOS =====
+import 'dart:io';
+import 'package:supabase_flutter/supabase_flutter.dart';
+// ===================================
+
 import '../../core/app_export.dart';
 import '../../models/subscription_plan.dart';
 import '../../models/user_profile.dart';
@@ -493,18 +498,53 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
     }
   }
 
+  // ===== FUNÇÃO _uploadProfileImage ATUALIZADA =====
   Future<void> _uploadProfileImage(XFile imageFile) async {
+    // A verificação de null já garante que _userProfile não é nulo
     if (_userProfile == null) return;
 
     try {
+      final supabase = Supabase.instance.client;
+      // 1. Pegar o ID do usuário logado
+      final currentUserId = supabase.auth.currentUser?.id;
+
+      if (currentUserId == null) {
+        throw Exception('Usuário não encontrado. Faça login novamente.');
+      }
+
+      // 2. Preparar o arquivo e o caminho de armazenamento
+      final file = File(imageFile.path);
+      final fileExtension = imageFile.path.split('.').last;
+
+      // Define um nome de arquivo padrão para o perfil, facilitando a substituição
+      // Ex: 'avatars/USER_ID/profile.jpg'
+      final storagePath = '$currentUserId/profile.$fileExtension';
+
+      // 3. Fazer o upload para o Supabase Storage
+      // Certifique-se que seu bucket se chama 'avatars'
+      // Usamos 'upsert: true' para que ele substitua a foto anterior
+      await supabase.storage.from('avatars').upload(
+        storagePath,
+        file,
+        fileOptions: const FileOptions(cacheControl: '3600', upsert: true),
+      );
+
+      // 4. Obter a URL pública da imagem que acabamos de subir
+      final publicUrl = supabase.storage
+          .from('avatars')
+          .getPublicUrl(storagePath);
+
+      // 5. Atualizar a tabela 'profiles' no banco de dados com a nova URL
       final updatedProfile =
       await UserService.instance.updateCurrentUserProfile(
         updates: {
-          'avatar_url': 'https://via.placeholder.com/150',
+          'avatar_url': publicUrl, // <-- CORREÇÃO: Usando a URL real
         },
       );
 
+      // 6. Atualizar a UI com os novos dados do perfil
       if (updatedProfile != null) {
+        if (!mounted) return;
         setState(() {
           _userProfile = updatedProfile;
         });
@@ -517,6 +557,7 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
         );
       }
     } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Erro ao atualizar foto: $e'),
@@ -525,6 +566,7 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
       );
     }
   }
+  // ===============================================
 
   void _showOptionsSheet({
     required String title,
@@ -1014,6 +1056,16 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
                           subtitle: 'Altura, Peso, Percentual de Gordura',
                           onTap: _showMeasurementsDialog,
                         ),
+                        ProfileSectionItem(
+                          iconName: 'checklist_outlined', // Ícone de "checklist"
+                          title: 'Refazer Onboarding',
+                          subtitle: 'Atualizar suas preferências iniciais',
+                          onTap: () {
+                            // Navega para a tela de onboarding
+                            // Certifique-se de que 'AppRoutes.onboardingScreen' é a rota correta
+                            Navigator.pushNamed(context, AppRoutes.onboardingFlow);
+                          },
+                        ),
                       ],
                     ),
                     SizedBox(height: 2.h),
@@ -1040,7 +1092,7 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
                         ),
                         ProfileSectionItem(
                           iconName: 'sync',
-                          title: 'Sincronização de Dados',
+                          title: 'Sincronizar Dados',
                           subtitle: _dataSyncEnabled ? 'Ativada' : 'Desativada',
                           trailing: Switch(
                             value: _dataSyncEnabled,
@@ -1132,7 +1184,7 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
                         ),
                         // NOVO ITEM PARA EXCLUIR CONTA
                         ProfileSectionItem(
-                          iconName: 'delete_forever',
+                          iconName: 'delete',
                           title: 'Excluir Conta',
                           subtitle: 'Esta ação é permanente',
                           onTap: () {
@@ -1140,7 +1192,7 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
                               context: context,
                               builder: (dialogContext) => ConfirmationDialogWidget(
                                 title: 'Excluir Conta',
-                                message: 'Tem certeza que deseja excluir sua conta?\n\nTodos os seus dados e sua assinatura serão removidos permanentemente. Esta ação não pode ser desfeita.',
+                                message: 'Tem certeza que deseja excluir sua conta?\n\Ntodos os seus dados e sua assinatura serão removidos permanentemente. Esta ação não pode ser desfeita.',
                                 confirmText: 'Sim, Excluir',
                                 onConfirm: () async {
                                   try {

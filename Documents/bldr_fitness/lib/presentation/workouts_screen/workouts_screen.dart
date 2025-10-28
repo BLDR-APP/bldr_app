@@ -44,12 +44,14 @@ class _WorkoutsScreenState extends State<WorkoutsScreen> {
       await WorkoutService.instance.getWorkoutTemplates(publicOnly: true);
       final exercises = await ExerciseService.instance.getExercises();
 
+      final bool isActive = await WorkoutService.instance.hasActiveWorkout();
+
       if (!mounted) return;
       setState(() {
         _workoutTemplates = (workouts ?? []).cast<Map<String, dynamic>>();
         _exercises = (exercises ?? []).cast<Map<String, dynamic>>();
         _filteredWorkouts = _workoutTemplates;
-        _hasActiveWorkout = false; // sem checagem automática
+        _hasActiveWorkout = isActive; // sem checagem automática
         _isLoading = false;
       });
     } catch (error) {

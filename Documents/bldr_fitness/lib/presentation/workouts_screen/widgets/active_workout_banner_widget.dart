@@ -530,7 +530,8 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
           });
         }
 
-        if (_activeWorkout == null || _activeWorkout!['is_completed'] == true) {
+        final bool isCompleted = (_activeWorkout?['is_completed'] as bool?) ?? false;
+        if (_activeWorkout == null || isCompleted) {
           _stopRest();
           return const SizedBox.shrink();
         }

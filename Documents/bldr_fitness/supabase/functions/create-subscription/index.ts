@@ -14,10 +14,10 @@ serve(async (req) => {
   try {
     const { plan_id, billing_period, coupon_code } = await req.json();
 
-    // --- PRINTS DE DEBUG ---
+    // --- PRINTS DE DEBUG (MANTIDOS) ---
     console.log(`--- FUNÇÃO SUPABASE INICIADA ---`);
     console.log(`BACKEND: Recebido coupon_code: ${coupon_code}`);
-    console.log(`BACKEND: Usando chave Stripe que começa com: ${stripeSecretKey.substring(0, 10)}...`); // Ex: sk_live_... ou sk_test_...
+    console.log(`BACKEND: Usando chave Stripe que começa com: ${stripeSecretKey.substring(0, 10)}...`);
     // --- FIM DOS PRINTS ---
 
     const supabaseClient = createClient(
@@ -68,9 +68,26 @@ serve(async (req) => {
       expand: ['latest_invoice.payment_intent'],
     };
 
+    // --- LÓGICA DE CUPOM ATUALIZADA PARA USAR PROMOTION CODES ---
     if (coupon_code && coupon_code.trim() !== '') {
-      subscriptionParams.coupon = coupon_code.trim().toUpperCase();
+      const codeToApply = coupon_code.trim().toUpperCase();
+      console.log(`Buscando código promocional no Stripe: ${codeToApply}`);
+
+      const promotionCodes = await stripe.promotionCodes.list({
+        code: codeToApply,
+        active: true,
+        limit: 1,
+      });
+
+      if (promotionCodes.data.length > 0) {
+        subscriptionParams.promotion_code = promotionCodes.data[0].id;
+        console.log(`Código promocional encontrado. Aplicando ID: ${promotionCodes.data[0].id}`);
+      } else {
+        // Lança o erro exato que vimos antes se o código não for encontrado.
+        throw new Error(`No such coupon: '${codeToApply}'`);
+      }
     }
+    // --- FIM DA ATUALIZAÇÃO ---
 
     const subscription = await stripe.subscriptions.create(subscriptionParams);
 
@@ -83,9 +100,8 @@ serve(async (req) => {
         headers: { 'Content-Type': 'application/json' },
       });
     } else {
-      // Caso de cupom 100% que não gera payment_intent
        const responsePayload = {
-        client_secret: null, // Não há client_secret para confirmar
+        client_secret: null,
         subscription_id: subscription.id,
       };
        return new Response(JSON.stringify(responsePayload), {
@@ -94,7 +110,7 @@ serve(async (req) => {
     }
 
   } catch (error) {
-    // --- PRINT DE DEBUG PARA ERROS ---
+    // --- PRINT DE DEBUG PARA ERROS (MANTIDO) ---
     console.error(`ERRO NA FUNÇÃO SUPABASE: ${error.message}`);
     // --- FIM DO PRINT ---
     return new Response(JSON.stringify({ error: error.message }), {

@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		mcT9iXnOMJ76wGmKCGZXjllWN68=
+		IdxhvfINqUC4YCXlL4vH900JRAY=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		xBxhU1f7F7mpX94l+b7ceT7yazM=
+		yvGGL7g+QveVvfB6RJXnTWCPplo=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		5ZWR65vqR0RDT9f5MRxCXj9taio=
+		30f7ZxXy+vFxL/F8iqYTlDh1Llo=
 		</data>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>flutter_assets/assets/images/.DS_Store</key>
 		<data>
-		Myp2n4ATjHnhO4VvuyMc1406U80=
+		y0IWft9cpzDUnulHaI8/qKomwsg=
 		</data>
 		<key>flutter_assets/assets/images/Don_t_Eat-1755374349972.png</key>
 		<data>
@@ -60,6 +60,22 @@
 		<data>
 		+LIKJdupMPlIrEQl3XFJi29bm+8=
 		</data>
+		<key>flutter_assets/assets/images/female_10-15%25.png</key>
+		<data>
+		egA2uesJf0D/SmGVNZ926+B961M=
+		</data>
+		<key>flutter_assets/assets/images/female_15-20%25.png</key>
+		<data>
+		8R6DJubrX8Hh+aVUdfJu2AsafKE=
+		</data>
+		<key>flutter_assets/assets/images/female_20-25%25.png</key>
+		<data>
+		+B1JkeKX8pfsy63u8nQnge9ZM/M=
+		</data>
+		<key>flutter_assets/assets/images/female_25-30%25.png</key>
+		<data>
+		uAomp/i9TTgWOvtTri1vrojgLTg=
+		</data>
 		<key>flutter_assets/assets/images/havok.png</key>
 		<data>
 		4xnSlHeOGk2CnO1+MHEYLlyeKSY=
@@ -67,6 +83,22 @@
 		<key>flutter_assets/assets/images/img_app_logo.svg</key>
 		<data>
 		j1O+11mTZtKlCKon8SSGPId3lgc=
+		</data>
+		<key>flutter_assets/assets/images/male_10-15%25.png</key>
+		<data>
+		Jyvd7eoH4I1FOZfxT6Xbmx4IYMA=
+		</data>
+		<key>flutter_assets/assets/images/male_15-20%25.png</key>
+		<data>
+		UwE1fKOMP4QJlgep+TbKbmJrvDg=
+		</data>
+		<key>flutter_assets/assets/images/male_20-25%25.png</key>
+		<data>
+		75qImDQGvFO7q8d5hhr6VcYg0+c=
+		</data>
+		<key>flutter_assets/assets/images/male_25-30%25.png</key>
+		<data>
+		XsDb608UeuJAMowfwKjqGHllZu0=
 		</data>
 		<key>flutter_assets/assets/images/no-image.jpg</key>
 		<data>
@@ -86,7 +118,7 @@
 		</data>
 		<key>flutter_assets/dart_defines.dev.json</key>
 		<data>
-		/lDuolRY8zrQ+5/5hpUr0uS20qk=
+		7OvPFI7jPQ2mCevDutmTemQNnyw=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -98,7 +130,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		yjzNmBUe4NmSOAOTTJLMffvuq9A=
+		s6IZPmStCx2Su90xgyI3GUVOmuY=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -120,6 +152,10 @@
 		<data>
 		WEbEpXQwGORif5YDTZqi+Yy0Pl8=
 		</data>
+		<key>flutter_assets/packages/muscle_selector/assets/maps/human_body.svg</key>
+		<data>
+		kFN4d9ARPAXDUNXGdCz3KCryKdY=
+		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
 		VvTF10G1gIeea4aI0DhJjCjHgXQ=
@@ -135,14 +171,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lrMID3D9xzPcqx60FYMUwN4JJHNW3NMbR/1LaRVmYBc=
+			/ez7+KeFPtUe7Vjqgy0nKqpURHZ1Bi06dhLULMbyaec=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OS3HrAaoXa9RgHQPInma3T9GFXPFWnmAlvVssJuTU/E=
+			hFPY7adqLnRJ5Hx4frFIz7axJWFQk0nc/+0ubhFrYRg=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -156,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TKN0TyTT1gvcaK6rieIio1424b5KNu5KfbeLD1um9Fo=
+			cUgunxR/ErZKvpYqxZxFRll3Rnse8VFAgPeGidYycKI=
 			</data>
 		</dict>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
@@ -215,6 +251,34 @@
 			upMzKWk95vqF6my3rusFbuVdLUcDVVJHtgzrStFFXGI=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/female_10-15%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kGJApace+mEi1ZhZKj+hZE65IITVtAD63egbHKIH/D0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/female_15-20%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+Y0H5rImvJnD32HOdj5wOjUzg6wZ5DbAd0dvl0r+ur8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/female_20-25%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DQdXRlzklhexzHVYeJovu5TSywzl1exisRs1yCmWqqs=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/female_25-30%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eXnRl9Zht2X7qplPxsImldPJO4yh15j0eyvoNTDOXN4=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/havok.png</key>
 		<dict>
 			<key>hash2</key>
@@ -227,6 +291,34 @@
 			<key>hash2</key>
 			<data>
 			Fhk+0fZ0d4ZujY8s9AwqwacdOWXNBdsaIN+qGLoWLYU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/male_10-15%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QTuC14dvLt0BgespaCsmUjteoT8Lwm7wqNMBaPX6shI=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/male_15-20%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SHL0kWZ/hwOyWb27MHIvfwUSwEhBvcqWJSx43XizHsg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/male_20-25%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gApO+jHDimqnNwkIpZybRWBCnuk8ZeAEi/HbsADdLcc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/male_25-30%25.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vJdKY2sJ0SSKQm1w1dspO5RfGdpJ+uezGFUKuSQtAHE=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/no-image.jpg</key>
@@ -254,7 +346,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ODgOIB9JSz74nzwulTjNULWlCAcPGY28mA1K7gWVA34=
+			Jf5d4H740lZ2ixRwJ/VbLgEAvtxhVHVDgsjCGs5ab90=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -275,7 +367,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pGneTTPhFHWS/qpaF8ZKvt2lJXQWGsiQCsyqG7BOc2s=
+			CFJThEn4uCpLZnJmrIeBSjgFGzYwAGhxqb1pMmlbgMs=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -311,6 +403,13 @@
 			<key>hash2</key>
 			<data>
 			diA9+uCqinsfRakM6idw7561BYOkRZE4EqiYhctpksM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/muscle_selector/assets/maps/human_body.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bC68XfwSW1WgwAWBGBee2k4tBOW2zZhYawn8xg4EjEk=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
