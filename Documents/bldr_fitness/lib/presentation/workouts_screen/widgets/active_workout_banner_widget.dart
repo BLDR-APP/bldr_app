@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert'; // <<< 1. ADICIONADO
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
@@ -22,8 +23,12 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
 
   // stream/state
   Map<String, dynamic>? _activeWorkout;
-  bool _isLoading = true;
   bool _hideBanner = false;
+
+  // <<< 2. VARIÁVEIS MODIFICADAS/ADICIONADAS >>>
+  StreamSubscription? _workoutSubscription;
+  String? _lastDataHash; // "Impressão digital" dos últimos dados processados
+  // bool _isLoading = true; // <<< REMOVIDO
 
   // cronômetro do treino (fallback quando não há duração planejada)
   Timer? _ticker;
@@ -59,6 +64,11 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
     );
     _pulseCtrl.repeat(reverse: true);
     _startTicker();
+
+    // <<< 3. initState() MODIFICADO >>>
+    // Em vez de StreamBuilder, vamos escutar o stream manualmente
+    _workoutSubscription =
+        WorkoutService.instance.activeWorkoutStream().listen(_onWorkoutDataReceived);
   }
 
   @override
@@ -67,10 +77,49 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
     _restTimer?.cancel();
     _pulseCtrl.dispose();
     _scrollCtrl.dispose();
+    _workoutSubscription?.cancel(); // <<< 4. dispose() MODIFICADO
     super.dispose();
   }
 
+  // <<< 5. FUNÇÃO ADICIONADA (O FILTRO DE DADOS) >>>
+  void _onWorkoutDataReceived(Map<String, dynamic>? data) {
+    if (!mounted) return;
+
+    // 1. Se os novos dados forem nulos, resetamos o estado e saímos
+    if (data == null) {
+      if (_activeWorkout != null) {
+        // Se tínhamos um treino antes, limpa o estado
+        setState(() {
+          _activeWorkout = null;
+          _lastDataHash = null;
+        });
+      }
+      return;
+    }
+
+    // 2. Criamos uma "impressão digital" (hash) dos novos dados
+    final String newDataHash = jsonEncode(data);
+
+    // 3. A VERIFICAÇÃO PRINCIPAL:
+    // Se o hash novo é IGUAL ao antigo, os dados não mudaram.
+    // ISSO QUEBRA O LOOP E CORRIGE O CRASH.
+    if (newDataHash == _lastDataHash) {
+      return;
+    }
+
+    // 4. Se chegamos aqui, os dados são REALMENTE novos.
+    // Atualizamos o hash e processamos os dados.
+    _lastDataHash = newDataHash;
+    _activeWorkout = data;
+
+    // 5. Chamamos sua função de lógica, que por sua vez chama setState()
+    _resolveCurrentSet(data);
+  }
+
+
   // ---------------- TIME ----------------
+  // (Nenhuma mudança nesta seção)
+  // ... (funções _startTicker, _computeElapsed, _fmt, etc. intactas)
 
   void _startTicker() {
     _ticker?.cancel();
@@ -120,6 +169,8 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
   }
 
   // --------------- DATA HELPERS ---------------
+  // (Nenhuma mudança nesta seção)
+  // ... (funções _isSetDone, _hasOpenSet, _resolveCurrentSet, etc. intactas)
 
   bool _isSetDone(Map s) =>
       (s['is_completed'] == true) || (s['completed_at'] != null);
@@ -223,6 +274,8 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
   }
 
   // --------------- REST ---------------
+  // (Nenhuma mudança nesta seção)
+  // ... (funções _startRestFixed, _stopRest intactas)
 
   void _startRestFixed() {
     _restTimer?.cancel();
@@ -248,7 +301,10 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
     }
   }
 
+
   // --------------- ACTIONS ---------------
+  // (Nenhuma mudança nesta seção)
+  // ... (funções _togglePause, _finalizeWorkoutNow, etc. intactas)
 
   Future<void> _togglePause() async {
     setState(() => _isPaused = !_isPaused);
@@ -402,6 +458,8 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
   }
 
   // --------------- UI HELPERS ---------------
+  // (Nenhuma mudança nesta seção)
+  // ... (funções _isThisCurrentSet, _buildSetChip intactas)
 
   bool _isThisCurrentSet(Map s) =>
       s['id']?.toString() != null && s['id'].toString() == _currentSetId;
@@ -502,345 +560,337 @@ class _ActiveWorkoutBannerWidgetState extends State<ActiveWorkoutBannerWidget>
 
   @override
   Widget build(BuildContext context) {
+    // <<< 6. MÉTODO build() MODIFICADO >>>
+    // REMOVIDO StreamBuilder
+    // REMOVIDO addPostFrameCallback
+
     if (_hideBanner) return const SizedBox.shrink();
 
-    final stream = WorkoutService.instance.activeWorkoutStream();
+    // Se _activeWorkout ainda é nulo (carregando ou não há treino),
+    // não mostramos nada.
+    if (_activeWorkout == null) {
+      _stopRest();
+      return const SizedBox.shrink();
+      // ou retorne _loadingCard() se preferir
+    }
 
-    return StreamBuilder<Map<String, dynamic>?>(
-      stream: stream,
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting && _isLoading) {
-          return _loadingCard();
-        }
+    // Se chegamos aqui, _activeWorkout NÃO é nulo.
+    // Trazemos a lógica que estava dentro do StreamBuilder para cá.
 
-        _isLoading = false;
-        final data = snapshot.data;
+    final bool isCompleted = (_activeWorkout?['is_completed'] as bool?) ?? false;
+    if (isCompleted) {
+      _stopRest();
+      return const SizedBox.shrink();
+    }
 
-        // ====================================================================
-        // <<< CORREÇÃO: Lógica de atualização de estado movida para cá >>>
-        // =iat
-        // A atualização do estado agora é agendada para depois da fase de build,
-        // evitando o erro "setState() called during build".
-        if (data != _activeWorkout) {
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            if (mounted) {
-              _activeWorkout = data;
-              _resolveCurrentSet(data);
-            }
-          });
-        }
+    _elapsedSeconds = _computeElapsed(_activeWorkout);
 
-        final bool isCompleted = (_activeWorkout?['is_completed'] as bool?) ?? false;
-        if (_activeWorkout == null || isCompleted) {
-          _stopRest();
-          return const SizedBox.shrink();
-        }
+    final setsList =
+        (_activeWorkout!['workout_exercise_sets'] as List?)
+            ?.cast<Map<String, dynamic>>() ??
+            [];
+    final totalSets = setsList.length;
+    final doneSets = _countDone(setsList);
+    final progress = totalSets == 0 ? 0.0 : (doneSets / totalSets);
 
-        _elapsedSeconds = _computeElapsed(_activeWorkout);
+    const canFinish = true;
 
-        final setsList =
-            (_activeWorkout!['workout_exercise_sets'] as List?)
-                ?.cast<Map<String, dynamic>>() ??
-                [];
-        final totalSets = setsList.length;
-        final doneSets = _countDone(setsList);
-        final progress = totalSets == 0 ? 0.0 : (doneSets / totalSets);
+    final hasOpen = _hasOpenSet(setsList);
 
-        const canFinish = true;
+    final curCounts = (_currentExerciseName == null || _currentExerciseName == 'Treino Concluído!')
+        ? (0, 0)
+        : (_currentExerciseSetsCompleted, _currentExerciseSetsTotal);
 
-        final hasOpen = _hasOpenSet(setsList);
-
-        final curCounts = (_currentExerciseName == null || _currentExerciseName == 'Treino Concluído!')
-            ? (0, 0)
-            : (_currentExerciseSetsCompleted, _currentExerciseSetsTotal);
-
-        return Container(
-          padding: EdgeInsets.all(4.w),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [
-                AppTheme.accentGold.withValues(alpha: 0.20),
-                AppTheme.accentGold.withValues(alpha: 0.10),
-              ],
-            ),
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: AppTheme.accentGold.withValues(alpha: 0.30)),
-          ),
-          child: Column(
+    // O resto do seu código de UI permanece 100% INTACTO.
+    return Container(
+      padding: EdgeInsets.all(4.w),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          colors: [
+            AppTheme.accentGold.withValues(alpha: 0.20),
+            AppTheme.accentGold.withValues(alpha: 0.10),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppTheme.accentGold.withValues(alpha: 0.30)),
+      ),
+      child: Column(
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  GestureDetector(
-                    onTap: _togglePause,
-                    child: Container(
-                      padding: EdgeInsets.all(2.w),
-                      decoration: BoxDecoration(
-                        color: _isPaused ? AppTheme.warningAmber : AppTheme.accentGold,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: CustomIconWidget(
-                        iconName: _isPaused ? 'pause' : 'play_arrow',
-                        color: AppTheme.primaryBlack,
-                        size: 6.w,
-                      ),
-                    ),
+              GestureDetector(
+                onTap: _togglePause,
+                child: Container(
+                  padding: EdgeInsets.all(2.w),
+                  decoration: BoxDecoration(
+                    color: _isPaused ? AppTheme.warningAmber : AppTheme.accentGold,
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  SizedBox(width: 3.w),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Treino Atual',
-                          style: AppTheme.darkTheme.textTheme.titleMedium?.copyWith(
-                            color: AppTheme.textPrimary,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        SizedBox(height: 0.3.h),
-                        Text(
-                          _workoutName(_activeWorkout),
-                          style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
-                            color: AppTheme.textSecondary,
-                          ),
-                        ),
-                        SizedBox(height: 0.8.h),
-                        Row(
-                          children: [
-                            CustomIconWidget(
-                              iconName: 'schedule',
-                              color: AppTheme.accentGold,
-                              size: 4.w,
-                            ),
-                            SizedBox(width: 1.w),
-                            Text(
-                              _plannedOrElapsedText(_activeWorkout),
-                              style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
-                                color: AppTheme.accentGold,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            const Spacer(),
-                            Text(
-                              '${(progress * 100).clamp(0, 100).toStringAsFixed(0)}%',
-                              style: AppTheme.darkTheme.textTheme.bodySmall?.copyWith(
-                                color: AppTheme.textSecondary,
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 0.6.h),
-                        Stack(
-                          alignment: Alignment.centerLeft,
-                          children: [
-                            Container(
-                              height: 4,
-                              decoration: BoxDecoration(
-                                color: AppTheme.surfaceDark,
-                                borderRadius: BorderRadius.circular(2),
-                              ),
-                            ),
-                            FractionallySizedBox(
-                              widthFactor: progress.clamp(0.0, 1.0),
-                              child: Container(
-                                height: 4,
-                                decoration: BoxDecoration(
-                                  color: AppTheme.accentGold,
-                                  borderRadius: BorderRadius.circular(2),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        if (_isResting)
-                          Padding(
-                            padding: EdgeInsets.only(top: 0.6.h),
-                            child: Row(
-                              children: [
-                                CustomIconWidget(
-                                  iconName: 'hourglass_bottom',
-                                  color: AppTheme.warningAmber,
-                                  size: 3.6.w,
-                                ),
-                                SizedBox(width: 1.w),
-                                Text(
-                                  'Descanso: ${_fmt(_restRemaining)}',
-                                  style: AppTheme.darkTheme.textTheme.bodySmall?.copyWith(
-                                    color: AppTheme.warningAmber,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                      ],
-                    ),
+                  child: CustomIconWidget(
+                    iconName: _isPaused ? 'pause' : 'play_arrow',
+                    color: AppTheme.primaryBlack,
+                    size: 6.w,
                   ),
-                  SizedBox(width: 2.w),
-                  GestureDetector(
-                    onTap: canFinish ? _confirmAndFinishWorkout : null,
-                    child: Opacity(
-                      opacity: canFinish ? 1.0 : 0.5,
-                      child: Container(
-                        padding: EdgeInsets.all(2.w),
-                        decoration: BoxDecoration(
-                          color: AppTheme.errorRed.withValues(alpha: 0.2),
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: AppTheme.errorRed),
-                        ),
-                        child: CustomIconWidget(
-                          iconName: 'stop',
-                          color: AppTheme.errorRed,
-                          size: 5.w,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
-              SizedBox(height: 1.6.h),
-              Row(
-                children: [
-                  CustomIconWidget(
-                    iconName: 'fitness_center',
-                    color: AppTheme.textSecondary,
-                    size: 4.w,
-                  ),
-                  SizedBox(width: 1.w),
-                  Expanded(
-                    child: Text(
-                      _currentExerciseName ?? 'Preparando exercício...',
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTheme.darkTheme.textTheme.titleSmall?.copyWith(
+              SizedBox(width: 3.w),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Treino Atual',
+                      style: AppTheme.darkTheme.textTheme.titleMedium?.copyWith(
                         color: AppTheme.textPrimary,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                  ),
-                  finalCounts(curCounts),
-                ],
-              ),
-              SizedBox(height: 0.6.h),
-              Container(
-                width: double.infinity,
-                height: 18.h,
-                decoration: BoxDecoration(
-                  color: AppTheme.surfaceDark,
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: AppTheme.dividerGray),
-                ),
-                child: Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      CustomIconWidget(
-                        iconName: 'play_circle',
+                    SizedBox(height: 0.3.h),
+                    Text(
+                      _workoutName(_activeWorkout),
+                      style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
                         color: AppTheme.textSecondary,
-                        size: 10.w,
-                      ),
-                      SizedBox(height: 0.6.h),
-                      Text(
-                        'Vídeo do exercício',
-                        style: AppTheme.darkTheme.textTheme.bodySmall?.copyWith(
-                          color: AppTheme.textSecondary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 1.2.h),
-              Row(
-                children: [
-                  Expanded(
-                    child: GestureDetector(
-                      onTap: (!hasOpen || _isResting || _completingSet)
-                          ? null
-                          : _completeCurrentSet,
-                      child: Opacity(
-                        opacity: (!hasOpen || _isResting || _completingSet) ? 0.5 : 1.0,
-                        child: Container(
-                          padding: EdgeInsets.all(2.6.w),
-                          decoration: BoxDecoration(
-                            color: AppTheme.successGreen.withValues(alpha: 0.18),
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: AppTheme.successGreen),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              CustomIconWidget(
-                                iconName: 'check',
-                                color: AppTheme.successGreen,
-                                size: 5.w,
-                              ),
-                              SizedBox(width: 2.w),
-                              Text(
-                                'Concluir série',
-                                style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
-                                  color: AppTheme.successGreen,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(width: 2.w),
-                  Expanded(
-                    child: GestureDetector(
-                      onTap: _togglePause,
-                      child: Container(
-                        padding: EdgeInsets.all(2.6.w),
-                        decoration: BoxDecoration(
-                          color: AppTheme.surfaceDark,
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: AppTheme.dividerGray),
+                    SizedBox(height: 0.8.h),
+                    Row(
+                      children: [
+                        CustomIconWidget(
+                          iconName: 'schedule',
+                          color: AppTheme.accentGold,
+                          size: 4.w,
                         ),
+                        SizedBox(width: 1.w),
+                        Text(
+                          _plannedOrElapsedText(_activeWorkout),
+                          style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.accentGold,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const Spacer(),
+                        Text(
+                          '${(progress * 100).clamp(0, 100).toStringAsFixed(0)}%',
+                          style: AppTheme.darkTheme.textTheme.bodySmall?.copyWith(
+                            color: AppTheme.textSecondary,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 0.6.h),
+                    Stack(
+                      alignment: Alignment.centerLeft,
+                      children: [
+                        Container(
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: AppTheme.surfaceDark,
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                        ),
+                        FractionallySizedBox(
+                          widthFactor: progress.clamp(0.0, 1.0),
+                          child: Container(
+                            height: 4,
+                            decoration: BoxDecoration(
+                              color: AppTheme.accentGold,
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    if (_isResting)
+                      Padding(
+                        padding: EdgeInsets.only(top: 0.6.h),
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CustomIconWidget(
-                              iconName: _isPaused ? 'play_arrow' : 'pause',
-                              color: AppTheme.textPrimary,
-                              size: 5.w,
+                              iconName: 'hourglass_bottom',
+                              color: AppTheme.warningAmber,
+                              size: 3.6.w,
                             ),
-                            SizedBox(width: 2.w),
+                            SizedBox(width: 1.w),
                             Text(
-                              _isPaused ? 'Retomar' : 'Pausar',
-                              style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
-                                color: AppTheme.textPrimary,
-                                fontWeight: FontWeight.w700,
+                              'Descanso: ${_fmt(_restRemaining)}',
+                              style: AppTheme.darkTheme.textTheme.bodySmall?.copyWith(
+                                color: AppTheme.warningAmber,
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
                           ],
                         ),
                       ),
+                  ],
+                ),
+              ),
+              SizedBox(width: 2.w),
+              GestureDetector(
+                onTap: canFinish ? _confirmAndFinishWorkout : null,
+                child: Opacity(
+                  opacity: canFinish ? 1.0 : 0.5,
+                  child: Container(
+                    padding: EdgeInsets.all(2.w),
+                    decoration: BoxDecoration(
+                      color: AppTheme.errorRed.withValues(alpha: 0.2),
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: AppTheme.errorRed),
+                    ),
+                    child: CustomIconWidget(
+                      iconName: 'stop',
+                      color: AppTheme.errorRed,
+                      size: 5.w,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 1.6.h),
+          Row(
+            children: [
+              CustomIconWidget(
+                iconName: 'fitness_center',
+                color: AppTheme.textSecondary,
+                size: 4.w,
+              ),
+              SizedBox(width: 1.w),
+              Expanded(
+                child: Text(
+                  _currentExerciseName ?? 'Preparando exercício...',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTheme.darkTheme.textTheme.titleSmall?.copyWith(
+                    color: AppTheme.textPrimary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              finalCounts(curCounts),
+            ],
+          ),
+          SizedBox(height: 0.6.h),
+          Container(
+            width: double.infinity,
+            height: 18.h,
+            decoration: BoxDecoration(
+              color: AppTheme.surfaceDark,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: AppTheme.dividerGray),
+            ),
+            child: Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  CustomIconWidget(
+                    iconName: 'play_circle',
+                    color: AppTheme.textSecondary,
+                    size: 10.w,
+                  ),
+                  SizedBox(height: 0.6.h),
+                  Text(
+                    'Vídeo do exercício',
+                    style: AppTheme.darkTheme.textTheme.bodySmall?.copyWith(
+                      color: AppTheme.textSecondary,
                     ),
                   ),
                 ],
               ),
-              if (setsList.isNotEmpty)
-                Padding(
-                  padding: EdgeInsets.only(top: 1.4.h),
-                  child: SizedBox(
-                    height: 32.h,
-                    child: _buildExpandedSets(setsList),
+            ),
+          ),
+          SizedBox(height: 1.2.h),
+          Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: (!hasOpen || _isResting || _completingSet)
+                      ? null
+                      : _completeCurrentSet,
+                  child: Opacity(
+                    opacity: (!hasOpen || _isResting || _completingSet) ? 0.5 : 1.0,
+                    child: Container(
+                      padding: EdgeInsets.all(2.6.w),
+                      decoration: BoxDecoration(
+                        color: AppTheme.successGreen.withValues(alpha: 0.18),
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: AppTheme.successGreen),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CustomIconWidget(
+                            iconName: 'check',
+                            color: AppTheme.successGreen,
+                            size: 5.w,
+                          ),
+                          SizedBox(width: 2.w),
+                          Text(
+                            'Concluir série',
+                            style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
+                              color: AppTheme.successGreen,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
+              ),
+              SizedBox(width: 2.w),
+              Expanded(
+                child: GestureDetector(
+                  onTap: _togglePause,
+                  child: Container(
+                    padding: EdgeInsets.all(2.6.w),
+                    decoration: BoxDecoration(
+                      color: AppTheme.surfaceDark,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: AppTheme.dividerGray),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        CustomIconWidget(
+                          iconName: _isPaused ? 'play_arrow' : 'pause',
+                          color: AppTheme.textPrimary,
+                          size: 5.w,
+                        ),
+                        SizedBox(width: 2.w),
+                        Text(
+                          _isPaused ? 'Retomar' : 'Pausar',
+                          style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textPrimary,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
-        );
-      },
+          if (setsList.isNotEmpty)
+            Padding(
+              padding: EdgeInsets.only(top: 1.4.h),
+              child: SizedBox(
+                height: 32.h,
+                child: _buildExpandedSets(setsList),
+              ),
+            ),
+        ],
+      ),
     );
   }
+
+  // --------------- WIDGETS BUILDERS ---------------
+  // (Nenhuma mudança nesta seção)
+  // ... (funções finalCounts, _byNameCounts, _loadingCard, etc. intactas)
 
   Widget finalCounts((int, int) curCounts) {
     if (curCounts.$2 <= 0) return const SizedBox.shrink();

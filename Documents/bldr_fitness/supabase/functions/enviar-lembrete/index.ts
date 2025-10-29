@@ -2,22 +2,28 @@
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 import { serve } from 'https://deno.land/std@0.168.0/http/server.ts'
-import * as djwt from "https://deno.land/x/djwt@v2.8/mod.ts";
+import * as djwt from "https://deno.land/x/djwt@v3.0.2/mod.ts"; // Atualizado
 
-/**
- * Função auxiliar para obter um Token de Acesso OAuth2 do Google
- * usando a Chave da Conta de Serviço.
- */
 async function getAccessToken() {
+  console.log("Iniciando getAccessToken (v3)..."); // v3
   const clientEmail = Deno.env.get('FCM_CLIENT_EMAIL');
-  // Os segredos do Supabase armazenam '\n' como texto literal, então substituímos
-  const privateKey = (Deno.env.get('FCM_PRIVATE_KEY') ?? '').replace(/\\n/g, '\n');
+  const privateKeyString = Deno.env.get('FCM_PRIVATE_KEY');
 
-  if (!clientEmail || !privateKey) {
-    throw new Error('Segredos do FCM (FCM_CLIENT_EMAIL ou FCM_PRIVATE_KEY) não estão configurados.');
+  if (!clientEmail || !privateKeyString) {
+    throw new Error('Segredos do FCM (FCM_CLIENT_EMAIL ou FCM_PRIVATE_KEY) não estão configurados ou estão vazios.');
   }
 
+  // ===== CORREÇÃO DEFINITIVA =====
+  // O Supabase Secrets salva o '\n' do JSON como o texto literal '\\n'.
+  // Precisamos convertê-lo de volta para uma quebra de linha real.
+  const privateKey = privateKeyString.replace(/\\n/g, '\n');
+
+  console.log("Email lido:", clientEmail);
+  console.log("Início da Chave Privada (processada):", privateKey.substring(0, 30));
+  // ===============================
+
   const now = Math.floor(Date.now() / 1000);
+
   const jwt = await djwt.create(
     { alg: 'RS256', typ: 'JWT' }, // Cabeçalho
     { // Payload
@@ -27,7 +33,7 @@ async function getAccessToken() {
       exp: now + 3600, // Token válido por 1 hora
       iat: now,
     },
-    privateKey, // Chave
+    privateKey, // <-- Passando a chave processada
   );
 
   const response = await fetch('https://oauth2.googleapis.com/token', {
@@ -48,32 +54,26 @@ async function getAccessToken() {
   return data.access_token;
 }
 
-/**
- * Função principal da Edge Function
- */
+// O resto da função (serve) é igual
 serve(async (req) => {
   try {
-    // 1. Pega os segredos que salvamos
     const projectId = Deno.env.get('FCM_PROJECT_ID');
     if (!projectId) {
       throw new Error('Segredo FCM_PROJECT_ID não está configurado.');
     }
 
-    // 2. Obtém o Token de Acesso OAuth2 para autorizar nosso envio
     const accessToken = await getAccessToken();
 
-    // 3. Conecta ao Supabase (como admin) para ler a tabela 'profiles'
     const supabaseAdmin = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     );
 
-    // 4. Busca TODOS os tokens de usuários que ativaram as notificações
     const { data: profiles, error } = await supabaseAdmin
-      .from('profiles')
+      .from('user_profiles')
       .select('fcm_token')
-      .eq('notifications_enabled', true) // Filtra quem ativou
-      .not('fcm_token', 'is', null)       // Garante que temos um token
+      .eq('notifications_enabled', true)
+      .not('fcm_token', 'is', null);
 
     if (error) {
       throw error;
@@ -86,32 +86,18 @@ serve(async (req) => {
       );
     }
 
-    // 5. Monta a URL da API V1 do FCM
     const FCM_URL = `https://fcm.googleapis.com/v1/projects/${projectId}/messages:send`;
 
-    // 6. Prepara todas as promessas de envio (uma para cada usuário)
     const sendPromises = profiles.map(profile => {
-      // O payload da V1 é um pouco diferente
       const notificationPayload = {
         message: {
-          token: profile.fcm_token, // O token do usuário vai aqui
+          token: profile.fcm_token,
           notification: {
             title: '🔥 Hora de Treinar!',
             body: 'Seu treino de hoje já está disponível. Vamos nessa!',
           },
-          android: { // Configuração específica do Android
-            notification: {
-              sound: 'default',
-            },
-          },
-          apns: { // Configuração específica da Apple (iOS)
-            payload: {
-              aps: {
-                sound: 'default',
-                badge: 1,
-              },
-            },
-          },
+          android: { notification: { sound: 'default' } },
+          apns: { payload: { aps: { sound: 'default', badge: 1 } } },
         },
       };
 
@@ -119,13 +105,12 @@ serve(async (req) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${accessToken}`, // <-- Autoriza com o Token de Acesso
+          'Authorization': `Bearer ${accessToken}`,
         },
         body: JSON.stringify(notificationPayload),
       });
     });
 
-    // 7. Envia todas as notificações em paralelo
     await Promise.all(sendPromises);
 
     return new Response(
@@ -134,7 +119,7 @@ serve(async (req) => {
     );
 
   } catch (err) {
-    console.error('Erro na Edge Function:', err);
+    console.error('Erro na Edge Function (v3):', err);
     return new Response(
       JSON.stringify({ error: err.message }),
       { headers: { 'Content-Type': 'application/json' }, status: 500 }
