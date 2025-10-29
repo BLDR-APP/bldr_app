@@ -4,5 +4,7 @@
 <dict>
 	<key>application-identifier</key>
 	<string>P8PPW4FR6D.com.bldr-fitness.app</string>
+	<key>aps-environment</key>
+	<string>development</string>
 </dict>
 </plist>

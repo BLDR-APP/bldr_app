@@ -1,0 +1,18 @@
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift":
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/HeartbeatStorage.swiftdeps"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/HeartbeatStorage.swiftconstvalues"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/HeartbeatStorage.dia"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/HeartbeatStorage.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/HeartbeatStorage.o"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift":
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/RingBuffer.d"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/RingBuffer.o"
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/RingBuffer.dia"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/RingBuffer.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/RingBuffer.swiftdeps"
+"/Users/SideHustle/Documents/bldr_fitness/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift":
+  diagnostics: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/Storage.dia"
+  object: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/Storage.o"
+  const-values: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/Storage.swiftconstvalues"
+  swift-dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/Storage.swiftdeps"
+  dependencies: "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/FirebaseCoreInternal.build/Objects-normal/arm64/Storage.d"

@@ -59,7 +59,7 @@ class _ActiveWorkoutCardWidgetState extends State<ActiveWorkoutCardWidget> {
         });
       }
     } catch (error) {
-      debugPrint('Error loading active workout: $error');
+      debugPrint('Erro ao carregar treino ativo: $error');
       if (mounted) {
         setState(() {
           isLoading = false;
@@ -123,7 +123,7 @@ class _ActiveWorkoutCardWidgetState extends State<ActiveWorkoutCardWidget> {
             ),
             SizedBox(height: 2.h),
             Text(
-              'Loading your workout...',
+              'Carregando seu treino...',
               style: AppTheme.darkTheme.textTheme.bodyMedium?.copyWith(
                 color: AppTheme.textSecondary,
               ),
@@ -589,7 +589,7 @@ class _ActiveWorkoutCardWidgetState extends State<ActiveWorkoutCardWidget> {
           TextButton(
             onPressed: () => Navigator.pop(context),
             child:
-                Text('Cancel', style: TextStyle(color: AppTheme.textSecondary)),
+                Text('Cancelar', style: TextStyle(color: AppTheme.textSecondary)),
           ),
           ElevatedButton(
             onPressed: () async {
@@ -602,7 +602,7 @@ class _ActiveWorkoutCardWidgetState extends State<ActiveWorkoutCardWidget> {
 
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text('Workout completed successfully!'),
+                    content: Text('Treino finalizado com sucesso!'),
                     backgroundColor: AppTheme.successGreen,
                     behavior: SnackBarBehavior.floating,
                   ),
@@ -613,7 +613,7 @@ class _ActiveWorkoutCardWidgetState extends State<ActiveWorkoutCardWidget> {
               } catch (error) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text('Failed to complete workout: $error'),
+                    content: Text('Falha ao finalizar treino: $error'),
                     backgroundColor: AppTheme.errorRed,
                     behavior: SnackBarBehavior.floating,
                   ),
@@ -624,7 +624,7 @@ class _ActiveWorkoutCardWidgetState extends State<ActiveWorkoutCardWidget> {
               backgroundColor: AppTheme.successGreen,
               foregroundColor: AppTheme.textPrimary,
             ),
-            child: Text('Complete'),
+            child: Text('Completar'),
           ),
         ],
       ),

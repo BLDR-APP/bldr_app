@@ -2,7 +2,14 @@
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/CwlCatchExceptionSupport.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/DKImagePickerController.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/DKPhotoGallery.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/FirebaseCore.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/FirebaseCoreInternal.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/FirebaseInstallations.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/FirebaseMessaging.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/GoogleDataTransport.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/GoogleUtilities.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/Mantle.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/FBLPromises.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/SDWebImage.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/SDWebImageWebPCoder.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/Stripe.framework
@@ -23,6 +30,7 @@
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/image_picker_ios.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/libwebp.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/mobile_scanner.framework
+/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/nanopb.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/path_provider_foundation.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/share_plus.framework
 /Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphonesimulator/Runner.app/Frameworks/shared_preferences_foundation.framework

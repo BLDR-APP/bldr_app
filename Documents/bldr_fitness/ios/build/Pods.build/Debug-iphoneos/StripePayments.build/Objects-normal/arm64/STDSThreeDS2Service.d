@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripePayments.build/module.modulemap \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSThreeDS2Service.m \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/Target\ Support\ Files/StripePayments/StripePayments-prefix.pch \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSThreeDS2Service.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSAlreadyInitializedException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSConfigParameters.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSDebuggerChecker.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSDeviceInformationManager.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSDirectoryServerCertificate.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSDirectoryServer.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSException+Internal.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSInvalidInputException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSLocalizedString.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSBundleLocator.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSJailbreakChecker.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSIntegrityChecker.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSNotInitializedException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSOSVersionChecker.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSSecTypeUtilities.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSSimulatorChecker.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSThreeDSProtocolVersion.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSTransaction+Private.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSTransaction.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSThreeDSProtocolVersion+Private.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSUICustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSButtonCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSNavigationBarCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSLabelCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSTextFieldCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSFooterCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSSelectionCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSWarning.h

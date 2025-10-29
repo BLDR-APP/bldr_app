@@ -1,0 +1,16 @@
+dependencies: \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/SDWebImage.build/module.modulemap \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageCodersManager.m \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/Target\ Support\ Files/SDWebImage/SDWebImage-prefix.pch \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageCodersManager.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageCoder.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDWebImageCompat.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/NSData+ImageContentType.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageFrame.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageIOCoder.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageGIFCoder.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageIOAnimatedCoder.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageAPNGCoder.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Core/SDImageHEICCoder.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Private/SDInternalMacros.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/SDWebImage/SDWebImage/Private/SDmetamacros.h

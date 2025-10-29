@@ -20,6 +20,7 @@
             "_$s17connectivity_plus31PathMonitorConnectivityProviderC07currentE5TypesSayAA0E4TypeOGvgTq",
             "_$s17connectivity_plus31PathMonitorConnectivityProviderCMa",
             "_$s17connectivity_plus31PathMonitorConnectivityProviderC07currentE5TypesSayAA0E4TypeOGvg",
+            "_connectivity_plusVersionNumber",
             "_$s17connectivity_plus16ConnectivityTypeO9hashValueSivg",
             "_$s17connectivity_plus16ConnectivityTypeOMn",
             "_$s17connectivity_plus22ConnectivityPlusPluginC10statusFrom33_D6FCED2D5D620BC5A1BBE53B5F72CEB9LL0A5TypesSaySSGSayAA0C4TypeOG_tF",
@@ -29,7 +30,6 @@
             "_$s17connectivity_plus31PathMonitorConnectivityProviderC04pathD033_DC44086486C9B1E03CB96CC218EB1188LL7Network06NWPathD0CSgvM",
             "_$s17connectivity_plus31PathMonitorConnectivityProviderC4stopyyF",
             "_$s17connectivity_plus22ConnectivityPlusPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
-            "_connectivity_plusVersionNumber",
             "_$s17connectivity_plus31PathMonitorConnectivityProviderC0A13UpdateHandlerySayAA0E4TypeOGcSgvg",
             "_$s17connectivity_plus22ConnectivityPlusPluginC0A13UpdateHandler33_D6FCED2D5D620BC5A1BBE53B5F72CEB9LL0A5TypesySayAA0C4TypeOG_tF",
             "_$s17connectivity_plus22ConnectivityPlusPluginCN",
@@ -81,22 +81,6 @@
             "_TtC17connectivity_plus31PathMonitorConnectivityProvider"
           ]
         }
-      },
-      {
-        "data": {
-          "global": [
-            "_Swift51Overrides"
-          ]
-        },
-        "targets": [
-          "x86_64-ios-simulator"
-        ],
-        "text": {
-          "global": [
-            "__ZN5swift39swift51override_conformsToSwiftProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEN7__swift9__runtime4llvm9StringRefEPFPKNS_35TargetProtocolConformanceDescriptorIS1_EES4_S8_SC_E",
-            "__Z34_swiftoverride_class_getSuperclassPKN5swift14TargetMetadataINS_9InProcessEEE"
-          ]
-        }
       }
     ],
     "flags": [
@@ -118,11 +102,11 @@
     ],
     "target_info": [
       {
-        "min_deployment": "13",
+        "min_deployment": "15",
         "target": "x86_64-ios-simulator"
       },
       {
-        "min_deployment": "14",
+        "min_deployment": "15",
         "target": "arm64-ios-simulator"
       }
     ]

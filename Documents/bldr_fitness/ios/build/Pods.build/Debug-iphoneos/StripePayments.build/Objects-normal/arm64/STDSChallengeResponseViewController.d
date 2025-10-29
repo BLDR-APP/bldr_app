@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripePayments.build/module.modulemap \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeResponseViewController.m \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/Target\ Support\ Files/StripePayments/StripePayments-prefix.pch \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSBundleLocator.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSLocalizedString.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeResponseViewController.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeResponse.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeResponseSelectionInfo.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeResponseMessageExtension.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeResponseImage.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSUICustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSButtonCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSNavigationBarCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSLabelCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSTextFieldCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSFooterCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSSelectionCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSImageLoader.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSDirectoryServer.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSStackView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSBrandingView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeInformationView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSChallengeSelectionView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSTextChallengeView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSVisionSupport.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSWhitelistView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSExpandableInformationView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSWebView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSProcessingView.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/UIView+LayoutSupport.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/NSString+EmptyChecking.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/UIColor+DefaultColors.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/UIButton+CustomInitialization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/UIFont+DefaultFonts.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/UIViewController+Stripe3DS2.h

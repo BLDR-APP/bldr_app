@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/StripePayments.build/module.modulemap \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSIntegrityChecker.m \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/Target\ Support\ Files/StripePayments/StripePayments-prefix.pch \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/STDSIntegrityChecker.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/Stripe3DS2.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSConfigParameters.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSThreeDS2Service.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSUICustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSButtonCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSNavigationBarCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSLabelCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSTextFieldCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSFooterCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSSelectionCustomization.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSWarning.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSAlreadyInitializedException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSInvalidInputException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSNotInitializedException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSRuntimeException.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSErrorMessage.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSJSONEncodable.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSJSONDecodable.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSProtocolErrorEvent.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSRuntimeErrorEvent.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSStripe3DS2Error.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSThreeDSProtocolVersion.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSAuthenticationRequestParameters.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSAuthenticationResponse.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSChallengeParameters.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSChallengeStatusReceiver.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSCompletionEvent.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSJSONEncoder.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSTransaction.h \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/StripePayments/Stripe3DS2/Stripe3DS2/include/STDSSwiftTryCatch.h

@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/CwlCatchException/CwlCatchException.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Debug-iphoneos/CwlCatchException/CwlCatchException.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "CwlCatchException-Swift.h",
+      'external-contents': "/Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/CwlCatchException.build/unextended-interface-header.h",
+    }]
+    }]
+}

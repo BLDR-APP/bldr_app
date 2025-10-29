@@ -15,6 +15,7 @@ class UserProfile {
   final bool onboardingCompleted;
   final DateTime createdAt;
   final DateTime updatedAt;
+  final bool? notificationsEnabled;
 
   UserProfile({
     required this.id,
@@ -29,6 +30,7 @@ class UserProfile {
     this.fitnessGoal,
     this.activityLevel,
     this.targetWeightKg,
+    this.notificationsEnabled,
     required this.isActive,
     required this.onboardingCompleted,
     required this.createdAt,
@@ -57,6 +59,7 @@ class UserProfile {
       onboardingCompleted: json['onboarding_completed'] as bool? ?? false,
       createdAt: DateTime.parse(json['created_at'] as String),
       updatedAt: DateTime.parse(json['updated_at'] as String),
+      notificationsEnabled: json['notifications_enabled'] as bool?,
     );
   }
 

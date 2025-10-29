@@ -1,0 +1,4 @@
+dependencies: \
+  /Users/SideHustle/Documents/bldr_fitness/ios/build/Pods.build/Debug-iphoneos/video_player_avfoundation.build/module.modulemap \
+  /Users/SideHustle/.pub-cache/hosted/pub.dev/video_player_avfoundation-2.8.4/darwin/video_player_avfoundation/Sources/video_player_avfoundation/AVAssetTrackUtils.m \
+  /Users/SideHustle/Documents/bldr_fitness/ios/Pods/Target\ Support\ Files/video_player_avfoundation/video_player_avfoundation-prefix.pch

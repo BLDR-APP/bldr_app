@@ -7,6 +7,8 @@ import 'package:sizer/sizer.dart';
 // ===== NOVOS IMPORTS ADICIONADOS =====
 import 'dart:io';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 // ===================================
 
 import '../../core/app_export.dart';
@@ -36,9 +38,13 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
 
   late ProfileNotifier _profileNotifier;
 
-  bool _notificationsEnabled = true;
+  bool _notificationsEnabled = false;
   bool _dataSyncEnabled = true;
   bool _privacyModeEnabled = false;
+
+  // ===== NOVA VARIÁVEL DE ESTADO ADICIONADA =====
+  bool _isTogglingNotifications = false;
+  // ==========================================
 
   @override
   void initState() {
@@ -82,6 +88,11 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
       setState(() {
         _userProfile = profile;
         _userSubscription = subscription;
+
+        // ===== CARREGA O ESTADO DA NOTIFICAÇÃO DO BANCO =====
+        _notificationsEnabled = profile?.notificationsEnabled ?? false;
+        // ====================================================
+
         _isLoading = false;
       });
     } catch (e) {
@@ -498,51 +509,39 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
     }
   }
 
-  // ===== FUNÇÃO _uploadProfileImage ATUALIZADA =====
   Future<void> _uploadProfileImage(XFile imageFile) async {
-    // A verificação de null já garante que _userProfile não é nulo
     if (_userProfile == null) return;
 
     try {
       final supabase = Supabase.instance.client;
-      // 1. Pegar o ID do usuário logado
       final currentUserId = supabase.auth.currentUser?.id;
 
       if (currentUserId == null) {
         throw Exception('Usuário não encontrado. Faça login novamente.');
       }
 
-      // 2. Preparar o arquivo e o caminho de armazenamento
       final file = File(imageFile.path);
       final fileExtension = imageFile.path.split('.').last;
 
-      // Define um nome de arquivo padrão para o perfil, facilitando a substituição
-      // Ex: 'avatars/USER_ID/profile.jpg'
       final storagePath = '$currentUserId/profile.$fileExtension';
 
-      // 3. Fazer o upload para o Supabase Storage
-      // Certifique-se que seu bucket se chama 'avatars'
-      // Usamos 'upsert: true' para que ele substitua a foto anterior
-      await supabase.storage.from('avatars').upload(
+      await supabase.storage.from('Images').upload(
         storagePath,
         file,
         fileOptions: const FileOptions(cacheControl: '3600', upsert: true),
       );
 
-      // 4. Obter a URL pública da imagem que acabamos de subir
       final publicUrl = supabase.storage
-          .from('avatars')
+          .from('Images')
           .getPublicUrl(storagePath);
 
-      // 5. Atualizar a tabela 'profiles' no banco de dados com a nova URL
       final updatedProfile =
       await UserService.instance.updateCurrentUserProfile(
         updates: {
-          'avatar_url': publicUrl, // <-- CORREÇÃO: Usando a URL real
+          'avatar_url': publicUrl,
         },
       );
 
-      // 6. Atualizar a UI com os novos dados do perfil
       if (updatedProfile != null) {
         if (!mounted) return;
         setState(() {
@@ -564,6 +563,93 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
           backgroundColor: AppTheme.errorRed,
         ),
       );
+    }
+  }
+
+  // ===== NOVA FUNÇÃO DE NOTIFICAÇÃO ADICIONADA =====
+  Future<void> _toggleNotifications(bool newValue) async {
+    if (_isTogglingNotifications) return;
+
+    setState(() {
+      _isTogglingNotifications = true;
+      _notificationsEnabled = newValue; // Atualização otimista
+    });
+
+    try {
+      // Pega a instância do Firebase Messaging
+      final fcm = FirebaseMessaging.instance;
+
+      // Prepara o mapa de dados para o Supabase
+      Map<String, dynamic> updates = {
+        'notifications_enabled': newValue,
+      };
+
+      if (newValue == true) {
+        // 1. Pedir permissão ao usuário
+        NotificationSettings settings = await fcm.requestPermission(
+          alert: true,
+          badge: true,
+          sound: true,
+        );
+
+        if (settings.authorizationStatus == AuthorizationStatus.authorized) {
+          // 2. Obter o token FCM
+          final fcmToken = await fcm.getToken();
+
+          if (fcmToken != null) {
+            // 3. Adicionar o token aos 'updates' para salvar no DB
+            updates['fcm_token'] = fcmToken;
+            print('Token FCM obtido e pronto para salvar: $fcmToken');
+          } else {
+            throw Exception('Não foi possível obter o token FCM.');
+          }
+        } else {
+          // Usuário não deu permissão
+          throw Exception('Permissão de notificação negada pelo usuário.');
+        }
+      } else {
+        // Se o usuário está desativando as notificações
+        // 1. Remover o token do DB
+        updates['fcm_token'] = null;
+
+        // 2. (Opcional) Invalidar o token atual
+        await fcm.deleteToken();
+        print('Token FCM deletado.');
+      }
+
+      // 3. ATUALIZAR O BANCO DE DADOS (Supabase)
+      final updatedProfile = await UserService.instance
+          .updateCurrentUserProfile(updates: updates);
+
+      if (updatedProfile != null) {
+        if (!mounted) return;
+        setState(() {
+          _userProfile = updatedProfile;
+          // Garante que o estado local é o que veio do banco
+          _notificationsEnabled = updatedProfile.notificationsEnabled ?? newValue;
+        });
+      } else {
+        throw Exception('Não foi possível atualizar o perfil');
+      }
+
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Erro ao atualizar notificações: $e'),
+          backgroundColor: AppTheme.errorRed,
+        ),
+      );
+      // Reverte o switch visualmente se der erro
+      setState(() {
+        _notificationsEnabled = !newValue;
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isTogglingNotifications = false;
+        });
+      }
     }
   }
   // ===============================================
@@ -1078,21 +1164,40 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
                           subtitle: _notificationsEnabled
                               ? 'Ativado'
                               : 'Desativado',
-                          trailing: Switch(
+
+                          // ===== LÓGICA DO SWITCH ATUALIZADA =====
+                          trailing: _isTogglingNotifications
+                              ? const SizedBox(
+                            width: 52, // Largura aprox. do Switch
+                            height: 36, // Altura aprox. do Switch
+                            child: Center(
+                              child: SizedBox(
+                                width: 20,
+                                height: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2.5,
+                                  color: AppTheme.accentGold,
+                                ),
+                              ),
+                            ),
+                          )
+                              : Switch(
                             value: _notificationsEnabled,
-                            onChanged: (value) {
-                              setState(() => _notificationsEnabled = value);
-                            },
+                            onChanged: _toggleNotifications,
                             activeColor: AppTheme.accentGold,
                           ),
-                          onTap: () {
-                            setState(() =>
-                            _notificationsEnabled = !_notificationsEnabled);
-                          },
+                          onTap: _isTogglingNotifications
+                              ? null
+                              : () => _toggleNotifications(!_notificationsEnabled),
+                          // =======================================
                         ),
                         ProfileSectionItem(
                           iconName: 'sync',
-                          title: 'Sincronizar Dados',
+
+                          // ===== TEXTO CORRIGIDO =====
+                          title: 'Sincronização',
+                          // ===========================
+
                           subtitle: _dataSyncEnabled ? 'Ativada' : 'Desativada',
                           trailing: Switch(
                             value: _dataSyncEnabled,
@@ -1192,7 +1297,7 @@ class _ProfileDrawerState extends State<ProfileDrawer> {
                               context: context,
                               builder: (dialogContext) => ConfirmationDialogWidget(
                                 title: 'Excluir Conta',
-                                message: 'Tem certeza que deseja excluir sua conta?\n\Ntodos os seus dados e sua assinatura serão removidos permanentemente. Esta ação não pode ser desfeita.',
+                                message: 'Tem certeza que deseja excluir sua conta?\n\nTodos os seus dados e sua assinatura serão removidos permanentemente. Esta ação não pode ser desfeita.',
                                 confirmText: 'Sim, Excluir',
                                 onConfirm: () async {
                                   try {

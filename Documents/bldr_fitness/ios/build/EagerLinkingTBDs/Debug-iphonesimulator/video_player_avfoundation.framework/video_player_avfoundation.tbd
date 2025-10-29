@@ -57,11 +57,11 @@
     ],
     "target_info": [
       {
-        "min_deployment": "13",
+        "min_deployment": "15",
         "target": "x86_64-ios-simulator"
       },
       {
-        "min_deployment": "14",
+        "min_deployment": "15",
         "target": "arm64-ios-simulator"
       }
     ]

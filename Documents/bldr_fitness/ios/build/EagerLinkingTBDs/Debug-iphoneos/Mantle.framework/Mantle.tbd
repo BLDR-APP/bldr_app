@@ -1,0 +1,78 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_MTLTransformerErrorHandlingErrorInvalidInput",
+            "_MTLJSONAdapterErrorExceptionThrown",
+            "_MTLURLValueTransformerName",
+            "_MTLJSONAdapterErrorDomain",
+            "_MTLBooleanValueTransformerName",
+            "_MTLJSONAdapterErrorInvalidJSONDictionary",
+            "_MTLJSONAdapterErrorNoClassFound",
+            "_MTLTransformerErrorHandlingInputValueErrorKey",
+            "_MantleVersionNumber",
+            "_MTLJSONAdapterErrorInvalidJSONMapping",
+            "_MTLUUIDValueTransformerName",
+            "_MTLJSONAdapterThrownExceptionErrorKey",
+            "_MantleVersionString",
+            "_MTLTransformerErrorHandlingErrorDomain"
+          ],
+          "objc_class": [
+            "MTLModel",
+            "MTLValueTransformer",
+            "MTLReversibleValueTransformer",
+            "MTLJSONAdapter",
+            "PodsDummy_Mantle"
+          ]
+        },
+        "text": {
+          "global": [
+            "_mtl_copyClassList",
+            "_mtl_getImmediateInstanceMethod",
+            "_mtl_executeCleanupBlock",
+            "_mtl_injectMethods",
+            "_mtl_addMethodsFromClass",
+            "_mtl_classIsKindOfClass",
+            "_mtl_replaceMethods",
+            "_MTLSelectorWithCapitalizedKeyPattern",
+            "_mtl_copyClassListConformingToProtocol",
+            "_mtl_copyPropertyAttributes",
+            "_mtl_stringFromTypedBytes",
+            "_mtl_copySubclassList",
+            "_mtl_removeMethod",
+            "_mtl_specialProtocolReadyForInjection",
+            "_mtl_getPropertyAccessorsForClass",
+            "_mtl_loadSpecialProtocol",
+            "_mtl_classBeforeSuperclass",
+            "_mtl_addMethods",
+            "_MTLSelectorWithKeyPattern",
+            "_MTLEqualObjects",
+            "_mtl_replaceMethodsFromClass",
+            "_mtl_injectMethodsFromClass"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/Mantle.framework/Mantle"
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "9",
+        "target": "arm64-ios"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}
