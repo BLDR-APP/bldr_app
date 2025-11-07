@@ -1,0 +1,33 @@
+# Arquivos gerados pelo Dart/Flutter
+.dart_tool/
+.idea/
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+*.ipr
+*.flutter-plugins
+*.flutter-plugins-dependencies
+
+# Arquivos de configuração de IDEs
+.vscode/
+
+# Arquivos sensíveis e de configuração local
+# NUNCA envie seus arquivos .plist ou .json de serviços!
+GoogleService-Info.plist
+google-services.json
+*.p8
+*.p12
+*.keys
+
+# Dependências de plataforma
+ios/Pods/
+ios/Flutter/App.framework
+ios/Flutter/engine.framework
+ios/Flutter/Flutter.podspec
+android/app/src/main/assets/flutter_assets/
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store

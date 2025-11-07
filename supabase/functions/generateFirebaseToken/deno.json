@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "https://deno.land/x/djwt@v2.9.1/": "https://deno.land/x/djwt@v2.9.1/"
+  }
+}
